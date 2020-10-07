@@ -1,0 +1,34 @@
+.navbar {
+  background: #6a1b9a;
+  height: 80px;
+}
+
+.navbar a, p{
+  color: rgb(210, 214, 198);
+  font-style: italic;
+  font-size: 3rem;
+  text-decoration: none;
+  margin: 5px;
+  line-height: 1;
+}
+
+
+#search-form {
+  width: 220px;
+  float: "right"
+}
+
+.form-inline{
+  color: rgb(210, 214, 198);
+  font-style: italic;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 3px;
+  line-height: 0;
+ 
+
+}
+
+.searchalline{
+  Position : "right";
+}
