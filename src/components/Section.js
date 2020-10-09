@@ -1,33 +1,85 @@
 import React from "react";
 import "../styles/Section.css";
+import { VectorMap } from "react-jvectormap";
 
-// By importing the Section.css file, it is added to the DOM whenever this component loads
 
-// We can also style a component inside of its JavaScript file by adding style properties to its rendered elements
-// Unlike regular HTML, a JSX style property must be an object instead of a string
-// On a style object, we camelCase all property names, and put all of the values in quotes
-// Non quoted values default to "pixels", e.g. height, margin, padding
+const mapData = {
+  US: 90,
+  FR: 40,
+  IT: 80,
+  ES: 70,
+  AU: 60,
+  CL: 50
+  
+  
+
+};
 
 const styles = {
   sectionStyles: {
-    background: "#f0f5cb"
+    background: "#ffd867"
   }
 };
 
-// We use JSX curly braces to evaluate the style object on the JSX tag
+const handleClick = (e, countryCode) => {
+  console.log(countryCode);
+};
+
 
 function Section() {
+
+  const { getCode, getName, getData } = require("country-list");
+console.log(getName('IS'));  // Iceland
+console.log(getCode('Iceland')); // IS
+console.log(getData());  //gets an array of all countries names & codes: [{code: "AU", name: "Australia"}]
   return (
-    <section style={styles.sectionStyles} className="section">
-      <h2>Welcome Note.</h2>
-      <p>
-          </p>
-      <p>
-         </p>
-      <p>
-      
-      </p>
-    </section>
+  
+<div>
+ <section style={styles.sectionStyles} className="section" >
+      <h2>Major Wine producing countries.</h2>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.css" type="text/css" media="screen"/>
+ </section>
+    
+<VectorMap
+  map={"world_mill"}
+  backgroundColor="transparent" //change it to ocean blue: #0077be
+  zoomOnScroll={false}
+  containerStyle={{
+    width: "100%",
+    height: "520px"
+  }}
+  onRegionClick={handleClick} //gets the country code
+  containerClassName="map"
+  regionStyle={{
+    initial: {
+      fill: "#e4e4e4",
+      "fill-opacity": 0.9,
+      stroke: "none",
+      "stroke-width": 0,
+      "stroke-opacity": 0
+    },
+    hover: {
+      "fill-opacity": 0.8,
+      cursor: "pointer"
+    },
+    selected: {
+      fill: "#2938bc" //color for the clicked country
+    },
+    selectedHover: {}
+  }}
+  regionsSelectable={true}
+  series={{
+    regions: [
+      {
+        values: mapData, //this is your data
+        scale: ["#146804", "#ff0000"], //your color game's here
+        normalizeFunction: "polynomial"
+      }
+    ]
+  }}
+/>
+</div>
+  
   );
 }
 

@@ -4,9 +4,6 @@ import cheese from "./Images/cheese-plate.jpg";
 
 
 
-
-
-
 function Header() {
   return (
     
