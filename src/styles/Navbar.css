@@ -1,6 +1,6 @@
 .navbar {
   background: #6a1b9a;
-  height: 80px;
+  height: 150px;
 }
 
 .navbar a, p{
@@ -11,6 +11,7 @@
   margin: 5px;
   line-height: 1;
 }
+
 
 
 #search-form {
@@ -32,3 +33,34 @@
 .searchalline{
   Position : "right";
 }
+
+ul {
+  list-style-type: none;
+  margin: 20;
+  padding: 0;
+  float: right;
+  overflow: hidden;
+  background-color:#5e1224;
+  
+  
+}
+
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
