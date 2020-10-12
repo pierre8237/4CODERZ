@@ -1,0 +1,66 @@
+.navbar {
+  background: #6a1b9a;
+  height: 150px;
+}
+
+.navbar a, p{
+  color: rgb(210, 214, 198);
+  font-style: italic;
+  font-size: 3rem;
+  text-decoration: none;
+  margin: 5px;
+  line-height: 1;
+}
+
+
+
+#search-form {
+  width: 220px;
+  float: "right"
+}
+
+.form-inline{
+  color: rgb(210, 214, 198);
+  font-style: italic;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 3px;
+  line-height: 0;
+ 
+
+}
+
+.searchalline{
+  Position : "right";
+}
+
+ul {
+  list-style-type: none;
+  margin: 20;
+  padding: 0;
+  float: right;
+  overflow: hidden;
+  background-color:#5e1224;
+  
+  
+}
+
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
