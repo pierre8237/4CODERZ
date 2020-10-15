@@ -1,14 +1,14 @@
 .navbar {
-  background: #6a1b9a;
-  height: 150px;
+ 
+  height: 120px;
 }
 
 .navbar a, p{
-  color: rgb(210, 214, 198);
+  color: rgb(221, 231, 190);
   font-style: italic;
   font-size: 3rem;
   text-decoration: none;
-  margin: 5px;
+  
   line-height: 1;
 }
 
@@ -24,7 +24,6 @@
   font-style: italic;
   font-size: 1.5rem;
   text-decoration: none;
-  margin: 3px;
   line-height: 0;
  
 
@@ -36,11 +35,10 @@
 
 ul {
   list-style-type: none;
-  margin: 20;
   padding: 0;
   float: right;
   overflow: hidden;
-  background-color:#5e1224;
+ 
   
   
 }
@@ -57,6 +55,8 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  
+  
 
 }
 
@@ -64,3 +64,8 @@ li a:hover:not(.active) {
   background-color: #111;
 }
 
+img{
+  
+  margin: 09px;
+  padding: 0%;
+}

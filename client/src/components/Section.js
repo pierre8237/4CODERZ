@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Section.css";
 import { VectorMap } from "react-jvectormap";
+import wine1 from "./Images/wine1.jpg"
 
 
 const mapData = {
@@ -35,6 +36,33 @@ console.log(getData());  //gets an array of all countries names & codes: [{code:
   return (
   
 <div>
+<section style={styles.sectionStyles} className="section">
+      <h2>Mission Statement.</h2>
+      <p> Our mission is to remove the mystery from cheese and wine pairings. We want to give you the power to recreate an exceptional cheese, charcuterie & wine pairing experience at your home. We also want to arm you with the advanced knowledge and theory behind why pairings work well, and the ability to share your learnings with the foodie friends & family in your life. We’re dedicated to making it easy to learn about the topic of cheese and wine pairings and acquired every product we feature in order to recreate at home. </p>
+      <p>
+         </p>
+      <p>
+      
+      </p>
+    </section>
+
+    <section>
+    <div class="row">
+  <div class="column">
+  <img src={wine1} alt="Wine and Chease" />
+  </div>
+  <div class="column">
+  <img src={wine1} alt="Wine and Chease"   />
+  </div>
+  <div class="column">
+  <img src={wine1} alt="Wine and Chease"  />
+  </div>
+  <div class="column">
+  <img src={wine1} alt="Wine and Chease"   />
+  </div>
+</div>
+</section>
+
  <section style={styles.sectionStyles} className="section" >
       <h2>Major Wine producing countries.</h2>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.css" type="text/css" media="screen"/>

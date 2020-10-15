@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Navbar.css";
-
+import logo from "./Images/logo.JPG"
 
 function Navbar() {
   return (
@@ -8,19 +8,18 @@ function Navbar() {
       style={{
         background: "#5e1224",
         textAlign: "left"
-
       }}
-      className="navbar"
-    >
+      className="navbar">
 
-
-      <a  href="/" >Pairing</a>
-
+      
+      <img src={logo} alt="logo" height="90px" />
+      
+      <a  href="/" >Vino Pairing</a>
       <ul >
-  <li><a  href="#USA" class="tittle">Usa</a></li>
-  <li><a  href="#France" class="tittle">France</a></li>
-  <li><a  href="#Italy" class="tittle">Italy</a></li>
-  <li><a  href="#Spain" class="tittle">Spain</a></li>
+  <li><a  href="#Mission" class="tittle">Mission STM</a></li>
+  <li><a  href="#Wines" class="tittle">Wines</a></li>
+  <li><a  href="#Map" class="tittle">Map</a></li>
+  <li><a  href="#Contact" class="tittle">Contact</a></li>
 
 
       <div style={{ width: "200px", float: "right", padding:"20px" }}>
@@ -32,6 +31,7 @@ function Navbar() {
                 </form>
             </div>
             </ul>
+            
     </nav>
 
     
