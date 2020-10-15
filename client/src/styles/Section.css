@@ -1,6 +1,7 @@
 .section {
   background: #8c8d8d;
   padding: 5px;
+  width: 1860px;
 }
 
 .section p{
@@ -19,7 +20,6 @@
 .column {
   float: left;
   width: 25%;
-  padding: 5px;
   
 }
 
@@ -28,5 +28,6 @@
   content: "";
   clear: both;
   display: table;
+  padding : 0px ;
 }
 /* End of CSS fro 4 images */

@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/Section1.css";
 import mathew from "./Images/team4.jpeg"
-import Colin from "./Images/dummy.jpg";
-import Aimee from "./Images/dummy.jpg";
-import Pierre from "./Images/dummy.jpg";
+import Colin from "./Images/Colin.JPG";
+import Aimee from "./Images/Aimee.jpg";
+import Pierre from "./Images/Pierre.jpg";
 
 
 
@@ -38,6 +38,9 @@ function Section1() {
         </form>
       </div>
    </div>
+
+   <br />
+   <br />
   
   
 <div class="row">
@@ -48,8 +51,8 @@ function Section1() {
         <h2>Aimee Millard</h2>
         <p class="title">Developer</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><a href="https://github.com/">GitHub </a></p>
+        <p>an.millard19@gmail.com</p>
+        <p><a href="https://github.com/aimeemillard">GitHub </a></p>
         
       </div>
     </div>
@@ -76,8 +79,8 @@ function Section1() {
         <h2>Pierre Calmles</h2>
         <p class="title">Developer</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><a href="https://github.com/">GitHub </a></p>
+        <p>pierre8237@yahoo.com</p>
+        <p><a href="https://github.com/pierre8237">GitHub </a></p>
         
       </div>
     </div>
@@ -90,8 +93,8 @@ function Section1() {
         <h2>Colin</h2>
         <p class="title">Developer</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>example@example.com</p>
-        <p><a href="https://github.com/">GitHub </a></p>
+        <p>colinschlank@yahoo.com</p>
+        <p><a href="https://github.com/colinschlank">GitHub </a></p>
       </div>
     </div>
   </div>

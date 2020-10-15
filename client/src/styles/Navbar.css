@@ -1,5 +1,4 @@
 .navbar {
- 
   height: 120px;
 }
 
@@ -8,7 +7,6 @@
   font-style: italic;
   font-size: 3rem;
   text-decoration: none;
-  
   line-height: 1;
 }
 
@@ -16,7 +14,7 @@
 
 #search-form {
   width: 220px;
-  float: "right"
+  float: "right";
 }
 
 .form-inline{
@@ -25,8 +23,6 @@
   font-size: 1.5rem;
   text-decoration: none;
   line-height: 0;
- 
-
 }
 
 .searchalline{
@@ -38,9 +34,6 @@ ul {
   padding: 0;
   float: right;
   overflow: hidden;
- 
-  
-  
 }
 
 
