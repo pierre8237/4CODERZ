@@ -1,0 +1,12 @@
+.position-sticky {
+  /* background-color: rgb(252, 151, 140); */
+  background-color: rgb(243, 153, 112);
+  text-align: center;
+  height: 80px;
+  padding: 20px;
+  border-top: 5px solid #a79b43;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  font-size: 14px;
+}

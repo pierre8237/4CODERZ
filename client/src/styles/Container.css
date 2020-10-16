@@ -1,0 +1,21 @@
+.container {
+  background-color: rgb(247, 244, 242);
+  border-radius: 10px;
+  height: auto;
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  padding: 30px 50px 30px 50px;
+}
+
+@media only screen and (max-width: 520px) {
+  .container {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .page-title {
+    margin-top: 30px;
+  }
+}

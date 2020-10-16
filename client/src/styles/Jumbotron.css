@@ -1,0 +1,21 @@
+.jumbotron {
+  background-image: url("../components/Images/cheese-plate.jpg");
+  font-family: "Raleway", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-bottom: 5px solid rgb(12, 12, 11);
+  text-align: center;
+  text-decoration: bold;
+  color: white;
+  padding: 100px;
+  height: 270px;
+}
+@media only screen and (max-width: 620px) {
+  .display-4 {
+    font-size: 2.8rem;
+  }
+  .jumbotron {
+    height: 240px;
+  }
+}
