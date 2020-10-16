@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Section2.css";
+import "../styles/Footer.css";
 
 
 function Footer() {
@@ -12,7 +12,7 @@ function Footer() {
   <a class="mr-3" href="https://en.wikipedia.org/wiki/Privacy_policy">Privacy Policy | </a>
         <a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms of Use</a>
     </div>
-  <p class="footer1">This web site only for age group 21 and up!!!</p>
+
     
   </div>
   

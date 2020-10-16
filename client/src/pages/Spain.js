@@ -1,5 +1,6 @@
 import React from "react";
-
+import Header from "../components/Header";
+import Wrapper from "../components/Wrapper";
 
 // import Header from "./components/Header";
 // import Map from "./components/Map";
@@ -11,6 +12,8 @@ import React from "react";
 function Spain () {
     return (
        <div>
+          <Header />
+          <Wrapper />
           <h1>Spain</h1>
           <p>Featured wines from Spain</p>
        </div>

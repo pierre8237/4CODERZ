@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   height: 120px;
 }
 
@@ -55,4 +55,39 @@ li a:hover:not(.active) {
 img {
   margin: 09px;
   padding: 0%;
+} */
+/* .navbar {
+  background-color: #f5e675;
+  color: black;
+  font-size: 15pt;
+  margin-top: -35px;
+  font-family: "Raleway", sans-serif;
+  border-right: 1px solid gray;
+  margin-right: 20px;
 }
+
+.nav {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav {
+    margin-top: -30px;
+  }
+}
+
+.dropdown-item {
+  background-color: rgb(252, 195, 189);
+  color: rgb(80, 78, 78);
+}
+
+.dropdown-item:hover {
+  opacity: 0.9;
+  color: rgb(80, 78, 78);
+  background-color: rgb(253, 219, 215);
+}
+
+.nav-link {
+  padding: 10px;
+  border-bottom: 2px dashed rgb(117, 105, 35);
+} */
