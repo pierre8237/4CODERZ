@@ -13,26 +13,29 @@ import Italy from "./pages/Italy";
 import Spain from "./pages/Spain";
 import Usa from "./pages/Usa";
 
-
-
 function App() {
-  
   return (
-   
     <Router>
       <Switch>
         <Route exact path="/" component={Cover} />
-        <Route exact path={["/", "/home"]}><Home /></Route>
-        <Route exact path="/france"><France /></Route>
-        <Route exact path="/italy"><Italy /></Route>
-        <Route exact path="/spain"><Spain /></Route>
-        <Route exact path="/usa"><Usa /></Route>
+        <Route exact path={["/", "/home"]}>
+          <Home />
+        </Route>
+        <Route exact path="/france">
+          <France />
+        </Route>
+        <Route exact path="/italy">
+          <Italy />
+        </Route>
+        <Route exact path="/spain">
+          <Spain />
+        </Route>
+        <Route exact path="/usa">
+          <Usa />
+        </Route>
       </Switch>
     </Router>
- 
-   
   );
 }
-
 
 export default App;
