@@ -1,6 +1,6 @@
 .jumbotron {
   background-image: url("../components/Images/cheese-plate.jpg");
-  font-family: "Raleway", sans-serif;
+  background-size: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -9,13 +9,15 @@
   text-decoration: bold;
   color: white;
   padding: 100px;
-  height: 270px;
+  height: 500px;
 }
+
 @media only screen and (max-width: 620px) {
-  .display-4 {
-    font-size: 2.8rem;
+  .display-4 * {
+    font-family: "URW Chancery L", cursive;
+    font-size: 50px;
   }
   .jumbotron {
-    height: 240px;
+    height: 200px;
   }
 }
