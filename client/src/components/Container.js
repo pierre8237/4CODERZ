@@ -3,7 +3,7 @@ import "../styles/Container.css";
 
 function Container(props) {
   return (
-    <div className={`container${props.fluid ? "-fluid" : ""}`}>
+    <div className={`container${props.wines ? "wines" : ""}`}>
       {props.children}
     </div>
   );

@@ -2,9 +2,16 @@ import React from "react";
 import Row from "../components/Row";
 import "../styles/About.css";
 
+
+import Col from "../components/Col";
+import Img from "../components/Img";
+import Container from "../components/Container";
+import Card from "../components/Card";
+import Wrapper from "../components/Wrapper";
+
 function About() {
     return (
-       
+<Container>     
 <div>
       <Row>
       <h2 className="about text-center"> Mission Statement.</h2>
@@ -16,7 +23,8 @@ function About() {
       
       </Row>
 </div>
-    )
+</Container> 
+)
 }
 
 export default About;

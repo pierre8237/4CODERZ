@@ -5,7 +5,7 @@ function Img(props) {
   console.log(props.image);
   return (
     <img style={{display: "inline-block"}}
-      className="t-funk shadow"
+      className="wines"
       src={props.image}
       alt={props.id}
       key={props.id}

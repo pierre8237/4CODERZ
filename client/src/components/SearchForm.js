@@ -24,13 +24,12 @@ class SearchForm extends Component {
     render(){
         return (
             <div className = "searchForm">
-                {/*add an event listener of form submit so the state only get set when the form is submitted*/}
-                <form onSubmit={(e) => this.handleFormSubmit(e)}>
+               <form onSubmit={(e) => this.handleFormSubmit(e)}>
                     <label 
                     htmlFor = 'location'
                     arialabel = 'enter address, neighbourhood, city, province or postal code'
                     className = 'searchForm__label'
-                    >I am looking for brunch spots near</label>
+                    >I am looking for a Whinery near</label>
                     <input 
                     type = 'text'
                     id = 'location'

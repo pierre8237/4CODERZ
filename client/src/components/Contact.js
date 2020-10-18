@@ -1,10 +1,17 @@
 import React from "react";
 import "../styles/Contact.css";
+import Row from "../components/Row";
+import Col from "../components/Col";
+import Img from "../components/Img";
+import Container from "../components/Container";
+import Card from "../components/Card";
+import Wrapper from "../components/Wrapper";
 
 
 
 function Contact() {
   return (
+<Container>
 <div>
 <div id="myContact" class="container">
   <h2>Contact Us</h2>
@@ -32,9 +39,9 @@ function Contact() {
           <input type="submit" value="Submit" />
         </form>
       </div>
-   </div>
-  </div> 
-    
+</div>
+</div> 
+</Container> 
   );
 }
 

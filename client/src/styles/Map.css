@@ -1,30 +1,12 @@
 .section {
-  background: #8c8d8d;
-  padding: 5px;
+  padding: 20px;
 }
 
 .section p {
   font-size: large;
 }
 
-.section h2 {
+h2 {
   text-align: center;
-  color: brown;
+  color: black;
 }
-/* CSS fro 4 images */
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 25%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-/* End of CSS fro 4 images */

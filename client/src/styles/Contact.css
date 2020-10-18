@@ -1,7 +1,7 @@
 /*Starting of contact page*/
 div {
   border-bottom-width: 2px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 #myContact {
   border-radius: 5px;
