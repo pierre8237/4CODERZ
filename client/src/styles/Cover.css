@@ -1,0 +1,73 @@
+.coverpage {
+  font-family: "URW Chancery L", cursive;
+  background: url("../components/Images/wineglass.jpg") center;
+  background-size: 500px;
+  background-color: white;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: black;
+  padding: 80px 0px 0px 80px;
+}
+h1 {
+  font-family: "URW Chancery L", cursive;
+  font-stretch: ultra-expanded;
+  font-size: 50px;
+}
+h5 {
+  color: red;
+}
+#root {
+  padding: 0px;
+}
+
+@media only screen and (max-width: 850px) {
+  .coverpage {
+    height: 100vh;
+    padding: 70px 0px 0px 30px;
+    background-size: 300px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .coverpage {
+    height: 80vh;
+    padding: 350px 0px 0px 30px;
+    background-size: 300px;
+  }
+}
+
+.text {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.coverBtn {
+  font-family: "Raleway", sans-serif;
+  text-shadow: none;
+  color: black;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.coverBtn:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 800px) {
+  .coverpageText {
+    padding-top: 370px;
+  }
+}

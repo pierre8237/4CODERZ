@@ -1,0 +1,150 @@
+<<<<<<< HEAD
+.navbar {
+  background: #6a1b9a;
+  height: 150px;
+}
+
+.navbar a, p{
+  color: rgb(210, 214, 198);
+  font-style: italic;
+  font-size: 3rem;
+  text-decoration: none;
+  margin: 5px;
+  line-height: 1;
+}
+
+
+
+#search-form {
+  width: 220px;
+  float: "right"
+}
+
+.form-inline{
+=======
+/* .navbar {
+  height: 120px;
+}
+
+.navbar a,
+p {
+  color: rgb(221, 231, 190);
+  font-style: italic;
+  font-size: 3rem;
+  text-decoration: none;
+
+  line-height: 1;
+}
+
+#search-form {
+  width: 220px;
+  float: "right";
+}
+
+.form-inline {
+>>>>>>> aimee
+  color: rgb(210, 214, 198);
+  font-style: italic;
+  font-size: 1.5rem;
+  text-decoration: none;
+<<<<<<< HEAD
+  margin: 3px;
+  line-height: 0;
+ 
+
+}
+
+.searchalline{
+  Position : "right";
+=======
+  line-height: 0;
+}
+
+.searchalline {
+  position: "right";
+>>>>>>> aimee
+}
+
+ul {
+  list-style-type: none;
+<<<<<<< HEAD
+  margin: 20;
+  padding: 0;
+  float: right;
+  overflow: hidden;
+  background-color:#5e1224;
+  
+  
+}
+
+
+
+=======
+  padding: 0;
+  float: right;
+  overflow: hidden;
+}
+
+>>>>>>> aimee
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+<<<<<<< HEAD
+
+=======
+>>>>>>> aimee
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+<<<<<<< HEAD
+=======
+img {
+  margin: 09px;
+  padding: 0%;
+} */
+/* .navbar {
+  background-color: #f5e675;
+  color: black;
+  font-size: 15pt;
+  margin-top: -35px;
+  font-family: "Raleway", sans-serif;
+  border-right: 1px solid gray;
+  margin-right: 20px;
+}
+
+.nav {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav {
+    margin-top: -30px;
+  }
+}
+
+.dropdown-item {
+  background-color: rgb(252, 195, 189);
+  color: rgb(80, 78, 78);
+}
+
+.dropdown-item:hover {
+  opacity: 0.9;
+  color: rgb(80, 78, 78);
+  background-color: rgb(253, 219, 215);
+}
+
+.nav-link {
+  padding: 10px;
+  border-bottom: 2px dashed rgb(117, 105, 35);
+} */
+>>>>>>> aimee
