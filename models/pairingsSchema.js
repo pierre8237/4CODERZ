@@ -40,6 +40,6 @@ const pairingSchema = new Schema({
   }
 });
 
-const Pairing = mongoose.model("pairing", pairingSchema);
+const Pairing = mongoose.model("Pairing", pairingSchema);
 
 module.exports = Pairing;
