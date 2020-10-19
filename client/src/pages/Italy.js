@@ -9,6 +9,7 @@ import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
 
+
 function Italy() {
    return (
       <div>
@@ -23,7 +24,7 @@ function Italy() {
         <h2 className="page-title">Italy</h2>
           <hr />
           <p>Featured
-          <a href="https://about-france.com/wines.htm"
+          <a href="https://www.worldwidewinetours.com/italy/italian-wine/"
             rel="noopener noreferrer"
             target="_blank">
             {" "}
@@ -39,8 +40,9 @@ function Italy() {
         </Container>
 
         <Container>
-            <p>Winery search</p>
-        </Container>
+    
+      </Container>
+
         <Footer />
       </div>
     );

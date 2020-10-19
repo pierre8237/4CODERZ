@@ -24,7 +24,7 @@ function Spain () {
       <h2 className="page-title">Spain</h2>
         <hr />
         <p>Featured
-        <a href="https://about-france.com/wines.htm"
+        <a href="https://www.worldwidewinetours.com/spain/"
           rel="noopener noreferrer"
           target="_blank">
           {" "}
@@ -40,8 +40,9 @@ function Spain () {
       </Container>
 
       <Container>
-         <p>Winery search</p>
-        </Container>
+  
+      </Container>
+
       <Footer />
     </div>
     );

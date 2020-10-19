@@ -9,6 +9,8 @@ import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
 
+// let db = wineDb.getPairings().then(res => console.log(res.data));
+
 function Usa () {
     return (
       <div>
@@ -23,7 +25,7 @@ function Usa () {
       <h2 className="page-title">USA</h2>
         <hr />
         <p>Featured
-        <a href="https://about-france.com/wines.htm"
+        <a href="https://www.worldwidewinetours.com/california/"
           rel="noopener noreferrer"
           target="_blank">
           {" "}
@@ -37,9 +39,11 @@ function Usa () {
       <Container>
          <p>Wine cards</p>
       </Container>
+
       <Container>
-         <p>Winery search</p>
-        </Container>
+  
+      </Container>
+
       <Footer />
     </div>
     );

@@ -9,6 +9,9 @@ import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
 
+import YelpApp from "../YelpApp";
+
+
 
 
 function France() {
@@ -25,7 +28,7 @@ function France() {
         <h2 className="page-title">France</h2>
           <hr />
           <p className="description">Featured
-          <a href="https://about-france.com/wines.htm"
+          <a href="https://www.worldwidewinetours.com/france/"
             rel="noopener noreferrer"
             target="_blank">
             {" "}
@@ -41,8 +44,11 @@ function France() {
         </Container>
         
         <Container>
-            <p>Winery search</p>
+   
+      <YelpApp />
+      
         </Container>
+
         <Footer />
       </div>
     );
