@@ -2,44 +2,44 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const pairingSchema = new Schema({
-  from: {
+  From: {
     type: String,
     required: true
   },
-  brand_name: {
+  Brand_name: {
     type: String,
     required: true
   },
-  vintage: {
+  Vintage: {
     type: Number,
     required: true
   },
-  region: {
+  Region: {
     type: String,
     required: true
   },
-  soil: {
+  Soil: {
     type: String,
     required: true
   },
-  grape: {
+  Grape: {
     type: String,
     required: true
   },
-  drinking_temperature: {
+  Drinking_temperature: {
     type: String,
     required: true
   },
-  price_point: {
+  Price_point: {
     type: String,
     required: true
   },
-  cheese_pairing: {
+  Cheese_pairing: {
     type: String,
     required: true
   }
 });
 
-const Pairing = mongoose.model("pairing", pairingSchema);
+const Pairing = mongoose.model("Pairing", pairingSchema);
 
 module.exports = Pairing;
