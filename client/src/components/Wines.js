@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import "../styles/Wines.css";
-import Row from "../components/Row";
+// import Row from "../components/Row";
 import Col from "../components/Col";
 import wineImages from "../wineImages.js";
 import Img from "../components/Img";
+import Container from "../components/Container";
+// import Card from "../components/Card";
+import Wrapper from "../components/Wrapper";
+
 
 // import wine1 from "./Images/mythicus.jpg"
 // import wine2 from "./Images/cakebread.jpeg"
@@ -22,17 +26,29 @@ class Wines extends Component {
 
   render() {
     return (
-      <div>
-      <hr />
-      <Row>
-        {this.state.wineImages.map(wineImgs => (
-          <Col size="lg-4 sm-12">
-            {" "}
+      
+      <Wrapper>
+      <Container>
+      <div style={{display: "inline-block"}}>
+      <div className="row">
+           <div className="col-sm-12" >
+       {this.state.wineImages.map(wineImgs => (
+         
+        
             <Img image={wineImgs.image} />
-          </Col>
-        ))}
-      </Row>
-      </div>
+      
+        //  <Col col size="lg-4 sm-12">
+        //    {" "}
+        //    <Img image={wineImgs.image} />
+         
+        //  </Col>
+       ))}
+      
+     </div>
+     </div>
+           </div>
+      </Container>
+      </Wrapper>
     );
     }
   }

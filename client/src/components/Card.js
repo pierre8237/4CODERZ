@@ -17,28 +17,28 @@ function Card(props) {
         />
         <p className="card-text">
           {props.card_text}
-          <ul className="technologies">
-            {props.technologies.map(projects => (
-              <li key={projects.id}>{projects}</li>
+          <ul className="wines">
+            {props.wines.map(wines => (
+              <li key={wines.id}>{wines}</li>
             ))}
           </ul>
         </p>
         <a
-          href={props.project_repo}
+          href={props.wines}
           className="btn"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Project Repo
+          Buy Wine
         </a>
         <br></br>
         <a
-          href={props.deployed_project}
+          href={props.wines}
           className="deploy btn"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Deployed Project
+          Visit Winery
         </a>
       </div>
     </div>
