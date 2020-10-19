@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-// import { library } from '@fortawesome/fontawesome-svg-core';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faUtensils, faSearchLocation, faPhone, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUtensils, faSearchLocation, faPhone, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
 
 
 import SearchForm from './components/SearchForm';
@@ -38,6 +38,6 @@ class YelpApp extends Component {
         }
       }
       
-    //   library.add(faUtensils, faSearchLocation, faPhone, faMapMarkerAlt)
+    library.add(faUtensils, faSearchLocation, faPhone, faMapMarkerAlt)
       
       export default YelpApp;
