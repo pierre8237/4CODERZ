@@ -13,7 +13,7 @@ class Header extends Component {
       { name: "France" },
       { name: "Italy" },
       { name: "Spain" },
-      { name: "Usa" }
+      { name: "USA" }
     ];
     return (
       <div>

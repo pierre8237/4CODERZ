@@ -1,22 +1,49 @@
 import React from "react";
 import Header from "../components/Header";
 import Wrapper from "../components/Wrapper";
+import Card from "../components/Card";
 import { wineDb } from "../utils/API";
-// import Header from "./components/Header";
-// import Map from "./components/Map";
-// import Navbar from "./components/Navbar";
-// import Contact from "./components/Contact";
-// import Footer from "./components/Footer";
-
-let db = windDb.getPairings().then(res => console.log(res.data));
+import Col from "../components/Col";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Row from "../components/Row";
+import Container from "../components/Container";
+import Jumbotron from "../components/Jumbotron";
+// let db = wineDb.getPairings().then(res => console.log(res.data));
+let db = wineDb.getPairings().then(res => console.log(res.data));
 
 function Usa() {
   return (
     <div>
       <Header />
-      <Wrapper />
-      <h1>United States</h1>
-      <p>Featured wines from the UNited States</p>
+      <Jumbotron />
+      <Container>
+        <Col size="lg-2 sm-12"></Col>
+        <Col size="lg-10 sm-12">
+          <h2 className="page-title">USA</h2>
+          <hr />
+          <p>
+            Featured
+            <a
+              href="https://www.worldwidewinetours.com/california/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {" "}
+              wines
+            </a>{" "}
+            from USA
+          </p>
+        </Col>
+      </Container>
+
+      <Container>
+        <p>Wine cards</p>
+      </Container>
+
+      <Container></Container>
+
+      <Footer />
     </div>
   );
 }

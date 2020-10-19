@@ -2,6 +2,13 @@ import React from "react";
 import "../styles/Map.css";
 import { VectorMap } from "react-jvectormap";
 
+import Row from "../components/Row";
+import Col from "../components/Col";
+import Img from "../components/Img";
+import Container from "../components/Container";
+import Card from "../components/Card";
+import Wrapper from "../components/Wrapper";
+
 
 
 const mapData = {
@@ -34,14 +41,15 @@ console.log(getName('IS'));  // Iceland
 console.log(getCode('Iceland')); // IS
 console.log(getData());  //gets an array of all countries names & codes: [{code: "AU", name: "Australia"}]
   return (
-  
-<div>
+
+<Container>
 
 
- {/* <section style={styles.sectionStyles} className="section" >
+
+ <section className="section" >
       <h2>Major Wine producing countries.</h2>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.css" type="text/css" media="screen"/>
- </section> */}
+ </section>
     
 <VectorMap
   map={"world_mill"}
@@ -49,7 +57,7 @@ console.log(getData());  //gets an array of all countries names & codes: [{code:
   zoomOnScroll={false}
   containerStyle={{
     width: "100%",
-    height: "520px"
+    height: "800px"
   }}
   onRegionClick={handleClick} //gets the country code
   containerClassName="map"
@@ -81,8 +89,8 @@ console.log(getData());  //gets an array of all countries names & codes: [{code:
     ]
   }}
 />
-</div>
-  
+
+</Container>
   );
 }
 

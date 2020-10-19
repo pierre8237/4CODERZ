@@ -1,5 +1,12 @@
 import React from "react";
 import "../styles/Team.css";
+import Row from "../components/Row";
+import Col from "../components/Col";
+import Img from "../components/Img";
+import Container from "../components/Container";
+import Card from "../components/Card";
+import Wrapper from "../components/Wrapper";
+
 import Mathew from "./Images/mathew.jpeg"
 import Colin from "./Images/colin.jpeg";
 import Aimee from "./Images/aimee.jpg";
@@ -9,7 +16,7 @@ import Pierre from "./Images/pierre.jpg";
 
 function Team() {
     return (
-<div>
+<Container>
 
 <div className="Row">
   <div class="column">
@@ -18,7 +25,7 @@ function Team() {
       <div class="container">
         <h2>Aimee Millard</h2>
         <p class="title">Developer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>text that describes me</p>
         <p>example@example.com</p>
         <p><a href="https://github.com/">GitHub </a></p>
       </div>
@@ -31,7 +38,7 @@ function Team() {
       <div class="container">
         <h2>Mathew Poovathany</h2>
         <p class="title">Developer</p>
-        <p>Worked on UI. Which includes HTML and CSS coding in react app.</p>
+        <p>text that describes me</p>
         <p>Poovathanymathew@gmail.com</p>
         <p><a href="https://github.com/mathewpoovathany">GitHub </a></p> 
       </div>
@@ -44,7 +51,7 @@ function Team() {
       <div class="container">
         <h2>Pierre Calmles</h2>
         <p class="title">Developer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>text that describes me</p>
         <p>example@example.com</p>
         <p><a href="https://github.com/">GitHub </a></p> 
       </div>
@@ -56,15 +63,15 @@ function Team() {
       <img src={Colin} alt="Colin"  />
       <div class="container">
         <h2>Colin</h2>
-        <p class="title">Developer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p class="title">Developer</p> 
+        <p>text that describes me</p>
         <p>example@example.com</p>
         <p><a href="https://github.com/">GitHub </a></p>
       </div>
     </div>
   </div>
 </div>
-</div>
+</Container>
    
   )
 }

@@ -13,6 +13,9 @@ import Italy from "./pages/Italy";
 import Spain from "./pages/Spain";
 import Usa from "./pages/Usa";
 
+import SearchForm from './components/SearchForm';
+import WineryList from './components/WineryList';
+
 function App() {
   return (
     <Router>
