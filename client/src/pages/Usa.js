@@ -8,7 +8,7 @@ import { wineDb } from "../utils/API";
 // import Contact from "./components/Contact";
 // import Footer from "./components/Footer";
 
-let db = windDb.getPairings().then(res => console.log(res.data));
+let db = wineDb.getPairings().then(res => console.log(res.data));
 
 function Usa() {
   return (
