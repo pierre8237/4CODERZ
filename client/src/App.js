@@ -12,6 +12,7 @@ import France from "./pages/France";
 import Italy from "./pages/Italy";
 import Spain from "./pages/Spain";
 import Usa from "./pages/Usa";
+import Img from "./pages/Gallery";
 
 import SearchForm from './components/SearchForm';
 import WineryList from './components/WineryList';
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route exact path="/usa">
           <Usa />
+        </Route>
+        <Route exact path="/Gallery">
+          <Img />
         </Route>
       </Switch>
     </Router>
