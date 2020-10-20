@@ -5,7 +5,6 @@ import axios from "axios";
 //     return axios.get("https://api.yelp.com/v3/businesses/search");
 //   }
 // };
-
 // axios
 //   .get(
 //     `${"https://cors-anywhere.herokuapp.com/"}https://api.yelp.com/v3/businesses/search?location=${locationSearched}`,
@@ -14,7 +13,7 @@ import axios from "axios";
 //         Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`
 //       },
 //       params: {
-//         categories: "breakfast_brunch"
+//         categories: "Wineries"
 //       }
 //     }
 //   )
@@ -24,7 +23,7 @@ import axios from "axios";
 //   .catch(err => {
 //     console.log("error");
 //   });
-
+//Do I need to import /api/pairingRoutes?
 export const wineDb = {
   getPairings: function () {
     return axios.get("/api/pairingRoutes");

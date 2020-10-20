@@ -1,4 +1,8 @@
 .wine-display {
   padding: 10px;
   align-content: space-between;
+  border: none;
+}
+.col {
+  padding: 50px 10px 20px 50px;
 }

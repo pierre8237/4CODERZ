@@ -23,32 +23,56 @@ export default [
       id: 5,
       image: require("./components/Images/wineImages/plantea.jpeg")
     },
+    {
+      id: 6,
+      image: require("./components/Images/wineImages/ramey.jpg")
+    },
+    {
+      id: 7,
+      image: require("./components/Images/wineImages/sokol.jpg")
+    },
+    {
+      id: 8,
+      image: require("./components/Images/wineImages/weinbach.jpg")
+    },
+    {
+      id: 9,
+      image: require("./components/Images/wineImages/cakebread.jpeg")
+    },
+    {
+      id: 10,
+      image: require("./components/Images/wineImages/cakebread.jpeg")
+    },
+    {
+      id: 11,
+      image: require("./components/Images/wineImages/cakebread.jpeg")
+    },
+    {
+      id: 12,
+      image: require("./components/Images/wineImages/cakebread.jpeg")
+    },
+    {
+      id: 11,
+      image: require("./components/Images/wineImages/cakebread.jpeg")
+    },
+    {
+      id: 12,
+      image: require("./components/Images/wineImages/cakebread.jpeg")
+    },
+    {
+      id: 13,
+      image: require("./components/Images/wineImages/cakebread.jpeg")
+    },
     // {
-    //   id: 6,
-    //   image: require("./components/images/wineImages/ramey.jpg")
+    //   id: 14,
+    //   image: require("./components/Images/wineImages/cakebread.jpeg")
     // },
     // {
-    //   id: 7,
-    //   image: require("./components/images/wineImages/sokol.jpg")
+    //   id: 15,
+    //   image: require("./components/Images/wineImages/cakebread.jpeg")
     // },
     // {
-    //   id: 8,
-    //   image: require("./components/images/wineImages/weinbach.jpg")
-    // },
-    // {
-    //   id: 9,
-    //   image: require("/Images/wineImages/cakebread.jpeg")
-    // },
-    // {
-    //   id: 10,
-    //   image: require("/Images/wineImages/cakebread.jpeg")
-    // },
-    // {
-    //   id: 11,
-    //   image: require("/Images/wineImages/cakebread.jpeg")
-    // },
-    // {
-    //   id: 12,
-    //   image: require("/Images/wineImages/cakebread.jpeg")
+    //   id: 16,
+    //   image: require("./components/Images/wineImages/cakebread.jpeg")
     // }
   ];

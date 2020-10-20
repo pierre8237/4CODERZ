@@ -9,7 +9,7 @@ import Pierre from "./Images/pierre (1).png";
 
 function Team() {
     return (
-<div>
+<Container>
 
  
 <div class="row">
@@ -33,7 +33,7 @@ function Team() {
       <div class="container">
         <h2>Mathew Poovathany</h2>
         <p class="title">Developer</p>
-        <p>Worked on UI. Which includes HTML and CSS coding in react app.</p>
+        <p>text that describes me</p>
         <p>Poovathanymathew@gmail.com</p>
         <p><a href="https://github.com/mathewpoovathany">GitHub </a></p> 
       </div>
@@ -68,7 +68,7 @@ function Team() {
     </div>
   </div>
 </div>
-</div>
+</Container>
    
   )
 }

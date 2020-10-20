@@ -14,6 +14,9 @@ import Spain from "./pages/Spain";
 import Usa from "./pages/Usa";
 import Img from "./pages/Gallery";
 
+import SearchForm from './components/SearchForm';
+import WineryList from './components/WineryList';
+
 function App() {
   return (
     <Router>
