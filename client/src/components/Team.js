@@ -1,9 +1,12 @@
 import React from "react";
 import "../styles/Team.css";
+ 
 import Mathew from "./Images/mathew (1).png"
 import Colin from "./Images/colin (1).png";
 import Aimee from "./Images/aimee (1).png";
 import Pierre from "./Images/pierre (1).png";
+import Container from "./Container"
+
 
 
 
