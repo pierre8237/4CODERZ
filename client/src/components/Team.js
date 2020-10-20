@@ -27,7 +27,6 @@ function Team() {
     </div>
   </div>
 
-
   <div class="column">
     <div class="card">
       <img src={Mathew} alt="Mathew"  />
