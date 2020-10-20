@@ -25,8 +25,7 @@ app.use(routes);
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-    `mongodb+srv://test:tCW2hoRC02UNvTls@cluster0.zjgum.azure.mongodb.net/lwin
-    ?retryWrites=true&w=majority`
+    "mongodb+srv://test:tCW2hoRC02UNvTls@cluster0.zjgum.azure.mongodb.net/lwin?retryWrites=true&w=majority"
 );
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
