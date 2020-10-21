@@ -1,3 +1,3 @@
 module.exports = {
-    Pairing: require("./pairingsSchema.js")
-  };
+  Pairing: require("./pairingsSchema.js")
+};

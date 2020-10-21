@@ -14,29 +14,30 @@ import YelpApp from "../YelpApp";
 
 // let db = wineDb.getPairings().then(res => console.log(res.data));
 
-function Usa () {
-    return (
-      <div>
+
+function Usa() {
+  return (
+    <div>
       <Header />
-      <Jumbotron />  
+      <Jumbotron />
       <Container>
-     
-      <Col size="lg-2 sm-12">
-    
-      </Col>
-      <Col size="lg-10 sm-12">
-      <h2 className="page-title">USA</h2>
-        <hr />
-        <p>Featured
-        <a href="https://www.worldwidewinetours.com/california/"
-          rel="noopener noreferrer"
-          target="_blank">
-          {" "}
-          wines
-          </a>{" "}
-          from USA
+        <Col size="lg-2 sm-12"></Col>
+        <Col size="lg-10 sm-12">
+          <h2 className="page-title">USA</h2>
+          <hr />
+          <p>
+            Featured
+            <a
+              href="https://www.worldwidewinetours.com/california/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {" "}
+              wines
+            </a>{" "}
+            from USA
           </p>
-      </Col>
+        </Col>
       </Container>
 
       <Container>
@@ -52,7 +53,7 @@ function Usa () {
 
       <Footer />
     </div>
-    );
+  );
 }
- 
+
 export default Usa;
