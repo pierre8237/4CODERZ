@@ -6,7 +6,7 @@ const pairingSchema = new Schema({
     type: String,
     required: true
   },
-  Brand_name: {
+  Brand_Name: {
     type: String,
     required: true
   },
@@ -26,15 +26,15 @@ const pairingSchema = new Schema({
     type: String,
     required: true
   },
-  Drinking_temperature: {
+  Drinking_Temperature: {
     type: String,
     required: true
   },
-  Price_point: {
+  Price_Point: {
     type: String,
     required: true
   },
-  Cheese_pairing: {
+  Cheese_Pairing: {
     type: String,
     required: true
   }
