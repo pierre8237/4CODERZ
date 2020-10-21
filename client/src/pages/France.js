@@ -10,6 +10,8 @@ import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
 
 import YelpApp from "../YelpApp";
+import WineryList from "../components/WineryList";
+import SearchForm from "../components/SearchForm";
 
 
 
@@ -45,7 +47,8 @@ function France() {
         
         <Container>
    
-      <YelpApp />
+        <YelpApp />
+     
       
         </Container>
 

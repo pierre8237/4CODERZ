@@ -1,6 +1,9 @@
 import React, {Component} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+
+
+
 class SearchForm extends Component {
     constructor() {
         super();
@@ -19,7 +22,9 @@ class SearchForm extends Component {
         e.preventDefault();
     
         this.props.onFormSubmit(this.state.searchLocationQuery)
-    }
+    };
+
+    // this.state = {
 
     render(){
         return (
@@ -42,6 +47,7 @@ class SearchForm extends Component {
                     type = "submit"
                     className = "searchForm__button"
                     >Search
+                    <FontAwesomeIcon icon="search-location" className="searchForm__icon"/>
                     </button>
                 </form>
             </div>

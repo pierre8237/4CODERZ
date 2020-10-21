@@ -9,6 +9,7 @@ import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
 
+import YelpApp from "../YelpApp";
 
 function Italy() {
    return (
@@ -40,8 +41,8 @@ function Italy() {
         </Container>
 
         <Container>
-    
-      </Container>
+        <YelpApp />
+        </Container>
 
         <Footer />
       </div>

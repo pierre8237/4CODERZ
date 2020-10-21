@@ -10,8 +10,13 @@ import Footer from "../components/Footer";
 import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
+
+
+import YelpApp from "../YelpApp";
 import "../styles/WineCard.css";
+
 let db = wineDb.getPairings().then(res => console.log(res.data));
+
 
 function Usa() {
   const [wines, setWines] = useState([]);
@@ -61,13 +66,14 @@ function Usa() {
       </Container>
 
       <Container>
-        <WineCard />
-      </Container>
 
-      <Container>
         <WineCard />
-      </Container>
-
+     </Container>
+    
+    <Container>
+    <YelpApp />
+     </Container>
+    
       <Footer />
     </div>
   );

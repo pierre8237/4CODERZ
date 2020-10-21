@@ -9,7 +9,7 @@ html {
   width: 100%;
 }
 
-.App {
+.YelpApp {
   display: grid;
   grid-template-areas:
     "header header header header"

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
+
+
 class WineryList extends Component {
 
     constructor(props) {
@@ -14,7 +17,7 @@ class WineryList extends Component {
     }
     
     componentDidMount () {
-        this.getWineriesFromApi("");
+        this.getWineriesFromApi("Connecticut");
     }
 
     componentDidUpdate (prevProps, prevState) {
