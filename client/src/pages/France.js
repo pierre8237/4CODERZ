@@ -9,6 +9,10 @@ import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
 
+import WineCard from "../components/WineCard";
+import { wineDb } from "../utils/API";
+import "../styles/WineCard.css";
+
 import YelpApp from "../YelpApp";
 import WineryList from "../components/WineryList";
 import SearchForm from "../components/SearchForm";
@@ -20,7 +24,7 @@ function France() {
     return (
       <div>
         <Header />
-        <Jumbotron />  
+        {/* <Jumbotron />   */}
         <Container>
 
         <Col size="lg-2 sm-12">
@@ -42,7 +46,7 @@ function France() {
         </Container>
 
         <Container>
-            <p>Wine cards</p>
+            <WineCard />
         </Container>
         
         <Container>

@@ -16,23 +16,21 @@ class Gallery extends Component {
   render() {
     return (
       
-      <Wrapper>
+      // <Wrapper>
       <Container>
       <div style={{display: "inline-block"}}>
       <div className="row">
-           <div className="col-sm-12" >
+      <div className="col-sm-12" >
+
        {this.state.GalleryImg.map(GalleryImg => (
-         
-        
             <Img image={GalleryImg.image} />
-      
        ))}
       
      </div>
      </div>
-           </div>
+     </div>
       </Container>
-      </Wrapper>
+      // </Wrapper>
     );
     }
   }

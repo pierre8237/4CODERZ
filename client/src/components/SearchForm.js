@@ -24,7 +24,7 @@ class SearchForm extends Component {
         this.props.onFormSubmit(this.state.searchLocationQuery)
     };
 
-    // this.state = {
+  
 
     render(){
         return (
