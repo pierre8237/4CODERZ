@@ -38,7 +38,9 @@ function App() {
         <Route exact path="/usa">
           <Usa />
         </Route>
-        <Route exact path="/Gallery"></Route>
+        <Route exact path="/gallery">
+          <Gallery />
+        </Route>
       </Switch>
     </Router>
   );
