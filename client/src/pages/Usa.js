@@ -2,12 +2,15 @@ import React from "react";
 import Header from "../components/Header";
 import Wrapper from "../components/Wrapper";
 import Card from "../components/Card";
+import { wineDb } from "../utils/API";
 import Col from "../components/Col";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
+
+import YelpApp from "../YelpApp";
 
 // let db = wineDb.getPairings().then(res => console.log(res.data));
 
@@ -37,11 +40,14 @@ function Usa () {
       </Container>
 
       <Container>
+       
+          {/* {db} */}
+        
          <p>Wine cards</p>
       </Container>
 
       <Container>
-  
+      <YelpApp />
       </Container>
 
       <Footer />
