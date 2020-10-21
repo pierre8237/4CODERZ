@@ -18,8 +18,6 @@ const mapData = {
   ES: 70,
   AU: 60,
   CL: 50
-  
-  
 
 };
 
