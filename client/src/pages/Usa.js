@@ -1,47 +1,58 @@
 import React, { useEffect, useState } from "react";
+
 import Header from "../components/Header";
 import Wrapper from "../components/Wrapper";
-import Card from "../components/Card";
-import { wineDb } from "../utils/API";
 import Col from "../components/Col";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
-// let db = wineDb.getPairings().then(res => console.log(res.data));
 
+// import Card from "../components/Card";
+import WineCard from "../components/WineCard";
+import { wineDb } from "../utils/API";
+import "../styles/WineCard.css";
+
+import YelpApp from "../YelpApp";
+
+
+let db = wineDb.getPairings().then(res => console.log(res.data));
 
 
 function Usa() {
-
   const [wines, setWines] = useState([]);
-// const [formObject, setFormObject] = useState({
-//   title: "",
-//   author: "",
-//   synopsis: ""
-// });
+  const [formObject, setFormObject] = useState({
+    From: "",
+    Brand_Name: "",
+    Vintage: "",
+    Region: "",
+    Soil: "",
+    Grape: "",
+    Drinking_Temperature: "",
+    Price_Point: "",
+    Cheese_Pairing: ""
+  });
 
-//  function loadWine() {
-//   wineDb.getPairings().then
-//   (res => {db =res.data}
-//     );
-//  }
+  function loadWine() {
+    wineDb.getPairings().then(res => {
+      db = res.data;
+    });
+  }
 
-wineDb.getPairings();
+  wineDb.getPairings();
 
   return (
     <div>
-   
       <Header />
-      <Jumbotron />
+      {/* <Jumbotron /> */}
       <Container>
         <Col size="lg-2 sm-12"></Col>
         <Col size="lg-10 sm-12">
           <h2 className="page-title">USA</h2>
           <hr />
           <p>
-            Featured!!!!
+            Featured
             <a
               href="https://www.worldwidewinetours.com/california/"
               rel="noopener noreferrer"
@@ -57,11 +68,14 @@ wineDb.getPairings();
       </Container>
 
       <Container>
-        <p>Wine cards</p>
-      </Container>
 
-      <Container></Container>
-
+        <WineCard />
+     </Container>
+    
+    <Container>
+    <YelpApp />
+     </Container>
+    
       <Footer />
     </div>
   );
