@@ -1,14 +1,14 @@
 import React from "react";
 // import { Card, CardTitle, Card } from "reactstrap";
 import "../styles/WineCard.css";
-import Louis from "./Images/wineImages/louis.jpg";
+// import Louis from "./Images/wineImages/louis.jpg";
 function WineCard(props) {
   console.log(props);
   return (
     <div className="card mb-1" style={{ maxWidth: "100%" }}>
       <div className="row no-gutters">
         <div className="col-md-4">
-          <img src={Louis} className="card-img" alt="..." />
+          {/* <img src={Louis} className="card-img" alt="..." /> */}
         </div>
         <div className="col-md-8">
           <div className="card-body">
