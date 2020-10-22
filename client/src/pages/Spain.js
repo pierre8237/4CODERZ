@@ -8,44 +8,51 @@ import Footer from "../components/Footer";
 import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
-
-
-function Spain () {
-    return (
-      <div>
+import WineCard from "../components/WineCard";
+function Spain() {
+  return (
+    <div>
       <Header />
-      <Jumbotron />  
+      <Jumbotron />
       <Container>
-     
-      <Col size="lg-2 sm-12">
-    
-      </Col>
-      <Col size="lg-10 sm-12">
-      <h2 className="page-title">Spain</h2>
-        <hr />
-        <p>Featured
-        <a href="https://www.worldwidewinetours.com/spain/"
-          rel="noopener noreferrer"
-          target="_blank">
-          {" "}
-          wines
-          </a>{" "}
-          from Spain
+        <Col size="lg-2 sm-12"></Col>
+        <Col size="lg-10 sm-12">
+          <h2 className="page-title">Spain</h2>
+          <hr />
+          <p>
+            Featured
+            <a
+              href="https://www.worldwidewinetours.com/spain/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {" "}
+              wines
+            </a>{" "}
+            from Spain
           </p>
-      </Col>
+        </Col>
       </Container>
 
       <Container>
-         <p>Wine cards</p>
+        <WineCard />
       </Container>
 
       <Container>
-  
+        <WineCard />
+      </Container>
+
+      <Container>
+        <WineCard />
+      </Container>
+
+      <Container>
+        <WineCard />
       </Container>
 
       <Footer />
     </div>
-    );
+  );
 }
- 
+
 export default Spain;

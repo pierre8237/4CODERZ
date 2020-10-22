@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Wrapper from "../components/Wrapper";
 // import Card from "../components/Card";
-import WineCard from "../components/WineCard";
+
 import { wineDb } from "../utils/API";
 import Col from "../components/Col";
 import Navbar from "../components/Navbar";
@@ -10,21 +10,25 @@ import Footer from "../components/Footer";
 import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
+import WineCard from "../components/WineCard";
 import "../styles/WineCard.css";
 let db = wineDb.getPairings().then(res => console.log(res.data));
 
 function Usa() {
   const [wines, setWines] = useState([]);
   const [formObject, setFormObject] = useState({
-    From: "",
     Brand_Name: "",
+    Cheese_Pairing: "",
+    Drinking_Temperature: "",
+    From: "",
+    Grape: "",
+    Price_Point: "",
     Vintage: "",
     Region: "",
     Soil: "",
-    Grape: "",
-    Drinking_Temperature: "",
-    Price_Point: "",
-    Cheese_Pairing: ""
+    Vintage: "",
+
+    Price_Point: ""
   });
 
   function loadWine() {
@@ -58,6 +62,14 @@ function Usa() {
           </p>
           {/* {loadWine()} */}
         </Col>
+      </Container>
+
+      <Container>
+        <WineCard />
+      </Container>
+
+      <Container>
+        <WineCard />
       </Container>
 
       <Container>
