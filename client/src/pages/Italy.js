@@ -9,6 +9,7 @@ import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
 
+
 import WineCard from "../components/WineCard";
 import { wineDb } from "../utils/API";
 import "../styles/WineCard.css";
@@ -26,19 +27,27 @@ function Italy() {
         <Col size="lg-2 sm-12">
       
         </Col>
+
         <Col size="lg-10 sm-12">
-        <h2 className="page-title">Italy</h2>
+          <h2 className="page-title">Italy</h2>
           <hr />
-          <p>Featured
-          <a href="https://www.worldwidewinetours.com/italy/italian-wine/"
-            rel="noopener noreferrer"
-            target="_blank">
-            {" "}
-            wines
+          <p>
+            Featured
+            <a
+              href="https://www.worldwidewinetours.com/italy/italian-wine/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {" "}
+              wines
             </a>{" "}
             from Italy
-            </p>
+          </p>
         </Col>
+
+
+
+
         </Container>
         
         <Container>
@@ -49,9 +58,21 @@ function Italy() {
         <YelpApp />
         </Container>
 
-        <Footer />
-      </div>
-    );
+
+      <Container>
+        <WineCard />
+      </Container>
+
+      <Container>
+        <WineCard />
+      </Container>
+
+      <Container>
+     </Container>
+
+      <Footer />
+    </div>
+  );
 }
- 
+
 export default Italy;

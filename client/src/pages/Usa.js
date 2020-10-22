@@ -9,9 +9,10 @@ import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
 
-// import Card from "../components/Card";
+
 import WineCard from "../components/WineCard";
 import { wineDb } from "../utils/API";
+
 import "../styles/WineCard.css";
 
 import YelpApp from "../YelpApp";
@@ -23,15 +24,18 @@ let db = wineDb.getPairings().then(res => console.log(res.data));
 function Usa() {
   const [wines, setWines] = useState([]);
   const [formObject, setFormObject] = useState({
-    From: "",
     Brand_Name: "",
+    Cheese_Pairing: "",
+    Drinking_Temperature: "",
+    From: "",
+    Grape: "",
+    Price_Point: "",
     Vintage: "",
     Region: "",
     Soil: "",
-    Grape: "",
-    Drinking_Temperature: "",
-    Price_Point: "",
-    Cheese_Pairing: ""
+    Vintage: "",
+
+    Price_Point: ""
   });
 
   function loadWine() {
@@ -68,14 +72,26 @@ function Usa() {
       </Container>
 
       <Container>
-
         <WineCard />
-     </Container>
+      </Container>
+
+      <Container>
+        <WineCard />
+      </Container>
+
+      <Container>
+        <WineCard />
+      </Container>
+
+      <Container>
+        <WineCard />
+      </Container>
     
     <Container>
     <YelpApp />
      </Container>
     
+
       <Footer />
     </div>
   );

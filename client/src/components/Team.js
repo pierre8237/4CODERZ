@@ -1,18 +1,16 @@
 import React from "react";
 import "../styles/Team.css";
- 
-import Mathew from "./Images/mathew (1).png"
+
+import Mathew from "./Images/mathew (1).png";
 import Colin from "./Images/colin (1).png";
 import Aimee from "./Images/aimee (1).png";
 import Pierre from "./Images/pierre (1).png";
-import Container from "./Container"
-
-
-
+import Container from "./Container";
 
 function Team() {
-    return (
-<Container>
+  return (
+    <Container>
+
 
  
 <div class="row">
@@ -67,13 +65,10 @@ function Team() {
         <p></p>
         <p>colinschlank@yahoo.com</p>
         <p><a href="https://github.com/colinschlank">GitHub </a></p>
+
       </div>
-    </div>
-  </div>
-</div>
-</Container>
-   
-  )
+    </Container>
+  );
 }
 
 export default Team;
