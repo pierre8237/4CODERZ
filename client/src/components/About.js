@@ -15,7 +15,7 @@ function About() {
 <Container>     
 <div>
       <Row>
-      <h2 className="about text-center" > Mission Statement.</h2>
+      <h2 className="about text-center" id="about1" > Mission Statement.</h2>
       <h4 className="about text-center">Our mission is to remove the mystery from cheese and wine pairings.
       We want to give you the power to recreate an exceptional cheese, charcuterie & wine pairing experience at your home.
      We also want to arm you with the advanced knowledge and theory behind why pairings work well, and the ability to share your
