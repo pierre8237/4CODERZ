@@ -18,8 +18,6 @@ const mapData = {
   ES: 70,
   AU: 60,
   CL: 50
-  
-  
 
 };
 
@@ -47,7 +45,7 @@ console.log(getData());  //gets an array of all countries names & codes: [{code:
 
 
  <section className="section" >
-      <h2>Major Wine producing countries.</h2>
+      <h2 id="map1">Major Wine producing countries.</h2>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.css" type="text/css" media="screen"/>
  </section>
     

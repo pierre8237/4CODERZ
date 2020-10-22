@@ -8,14 +8,26 @@ import Footer from "../components/Footer";
 import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
+
+
 import WineCard from "../components/WineCard";
+import { wineDb } from "../utils/API";
+import "../styles/WineCard.css";
+
+
+import YelpApp from "../YelpApp";
+
 function Italy() {
-  return (
-    <div>
-      <Header />
-      <Jumbotron />
-      <Container>
-        <Col size="lg-2 sm-12"></Col>
+   return (
+      <div>
+        <Header />
+        {/* <Jumbotron />   */}
+        <Container>
+       
+        <Col size="lg-2 sm-12">
+      
+        </Col>
+
         <Col size="lg-10 sm-12">
           <h2 className="page-title">Italy</h2>
           <hr />
@@ -32,7 +44,20 @@ function Italy() {
             from Italy
           </p>
         </Col>
-      </Container>
+
+
+
+
+        </Container>
+        
+        <Container>
+            <WineCard />
+        </Container>
+
+        <Container>
+        <YelpApp />
+        </Container>
+
 
       <Container>
         <WineCard />
@@ -43,14 +68,7 @@ function Italy() {
       </Container>
 
       <Container>
-        <WineCard />
-      </Container>
-
-      <Container>
-        <WineCard />
-      </Container>
-
-      <Container></Container>
+     </Container>
 
       <Footer />
     </div>

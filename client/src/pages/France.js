@@ -8,16 +8,28 @@ import Footer from "../components/Footer";
 import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
+
+
 import WineCard from "../components/WineCard";
+import { wineDb } from "../utils/API";
+import "../styles/WineCard.css";
+
+
 import YelpApp from "../YelpApp";
+import WineryList from "../components/WineryList";
+import SearchForm from "../components/SearchForm";
 
 function France() {
-  return (
-    <div>
-      <Header />
-      <Jumbotron />
-      <Container>
-        <Col size="lg-2 sm-12"></Col>
+
+    return (
+      <div>
+        <Header />
+        {/* <Jumbotron />   */}
+        <Container>
+
+        <Col size="lg-2 sm-12">
+        </Col>
+
 
         <Col size="lg-10 sm-12">
           <h2 className="page-title">France</h2>
@@ -35,6 +47,7 @@ function France() {
             from France
           </p>
         </Col>
+
       </Container>
 
       <Container>
@@ -60,6 +73,23 @@ function France() {
       <Footer />
     </div>
   );
+
+        </Container>
+
+        <Container>
+            <WineCard />
+        </Container>
+        
+        <Container>
+   
+        <YelpApp />
+     
+      
+        </Container>
+
+        <Footer />
+      </div>
+    );
 }
 
 export default France;

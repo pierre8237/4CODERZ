@@ -1,4 +1,5 @@
 import React from "react";
+
 import Header from "../components/Header";
 import Wrapper from "../components/Wrapper";
 import Card from "../components/Card";
@@ -8,12 +9,20 @@ import Footer from "../components/Footer";
 import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
+
+
 import WineCard from "../components/WineCard";
-function Spain() {
-  return (
-    <div>
+import { wineDb } from "../utils/API";
+import "../styles/WineCard.css";
+
+import YelpApp from "../YelpApp";
+
+function Spain () {
+    return (
+      <div>
       <Header />
-      <Jumbotron />
+      {/* <Jumbotron />   */}
+
       <Container>
         <Col size="lg-2 sm-12"></Col>
         <Col size="lg-10 sm-12">
@@ -47,7 +56,11 @@ function Spain() {
       </Container>
 
       <Container>
-        <WineCard />
+         <WineCard />
+      </Container>
+
+      <Container>
+      <YelpApp />
       </Container>
 
       <Footer />
