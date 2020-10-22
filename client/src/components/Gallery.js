@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../styles/Wines.css";
 import Col from "./Col";
 import GalleryImg from "../GalleryImg";
-import Img from "./Img";
+import Img from "./Img1";
 import Container from "./Container";
 import Wrapper from "./Wrapper";
 
