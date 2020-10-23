@@ -1,4 +1,4 @@
-/* .navbar {
+.navbar {
   height: 120px;
 }
 
@@ -55,8 +55,8 @@ li a:hover:not(.active) {
 img {
   margin: 09px;
   padding: 0%;
-} */
-/* .navbar {
+}
+.navbar {
   background-color: #f5e675;
   color: black;
   font-size: 15pt;
@@ -90,4 +90,4 @@ img {
 .nav-link {
   padding: 10px;
   border-bottom: 2px dashed rgb(117, 105, 35);
-} */
+}

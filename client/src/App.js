@@ -24,7 +24,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={Cover} />
-        <Route exact path={["/", "/home"]}>
+        <Route exact path="/home">
           <Home />
         </Route>
         <Route exact path="/france">
@@ -49,5 +49,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
