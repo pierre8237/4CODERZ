@@ -14,7 +14,7 @@ function ContactUs() {
 <Container>
 <div>
 <div id="myContact" class="container">
-  <h2>Contact Us</h2>
+  {/* <h2>Contact Us</h2> */}
       <div id="my-contact" class="row">
         <form action="action_page.php">
           <label for="name">Name</label>
