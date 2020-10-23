@@ -14,7 +14,7 @@ function Jumbotron(props) {
     <div className="jumbotron jumbotron-fluid">
       <div className="jumbodisplay">
         <h1 className="display-4">
-          Dionysus <i class="fas fa-wine-bottle"></i>
+          Dionysus
         </h1>
       </div>
     </div>

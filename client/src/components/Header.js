@@ -14,7 +14,8 @@ class Header extends Component {
       { name: "Italy" },
       { name: "Spain" },
       { name: "Usa" },
-      { name: "Gallery" }
+      { name: "Gallery" },
+      { name: "Contact" }
     ];
     return (
       <div>
