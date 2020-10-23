@@ -74,22 +74,6 @@ function France() {
     </div>
   );
 
-        </Container>
-
-        <Container>
-            <WineCard />
-        </Container>
-        
-        <Container>
-   
-        <YelpApp />
-     
-      
-        </Container>
-
-        <Footer />
-      </div>
-    );
 }
 
 export default France;
