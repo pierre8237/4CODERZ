@@ -1,8 +1,9 @@
 p {
   margin: 0px 0px 8px;
 }
-th {
+.th {
   padding: 0 0 0 0;
+  max-width: 50%;
 }
 .card-body {
   padding: 0 0 0 0;
