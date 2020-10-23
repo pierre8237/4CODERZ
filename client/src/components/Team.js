@@ -67,9 +67,11 @@ function Team() {
         <p><a href="https://github.com/colinschlank">GitHub </a></p>
 
       </div>
+
      </div>
      </div>
      </div>
+
     </Container>
   );
 }

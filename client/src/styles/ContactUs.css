@@ -1,4 +1,7 @@
 /*Starting of contact page*/
+h1 {
+  text-align: center;
+}
 div {
   border-bottom-width: 2px;
   padding: 20px;
