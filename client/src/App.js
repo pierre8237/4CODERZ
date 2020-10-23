@@ -14,6 +14,7 @@ import Spain from "./pages/Spain";
 import Usa from "./pages/Usa";
 import Gallery from "./pages/Gallery";
 import Img from "./pages/Gallery";
+import Contact from "./pages/Contact";
 
 import SearchForm from "./components/SearchForm";
 import WineryList from "./components/WineryList";
@@ -40,6 +41,9 @@ function App() {
         </Route>
         <Route exact path="/gallery">
           <Gallery />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
         </Route>
       </Switch>
     </Router>
