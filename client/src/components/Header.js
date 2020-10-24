@@ -51,6 +51,7 @@ function Header() {
         <a href="/spain">Spain</a>
         <a href="/usa">USA</a>
         <a href="/gallery">Gallery</a>
+        <a href="/search">Search</a>
         <a href="/contact">Contact</a>
 
       </nav>

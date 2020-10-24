@@ -1,4 +1,4 @@
-.WineryList {
+/* .WineryList {
   grid-area: gallery;
   @include border;
 
@@ -83,4 +83,4 @@
       filter: brightness(100%) grayscale(0) contrast(100%);
     }
   }
-}
+} */

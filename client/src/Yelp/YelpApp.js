@@ -9,10 +9,11 @@ import {
   faMapMarkerAlt
 } from "@fortawesome/free-solid-svg-icons";
 
-import SearchForm from "./components/SearchForm";
-import WineryList from "./components/WineryList";
 
-import "./App.css";
+import SearchForm from "../components/SearchForm";
+import WineryList from "../components/WineryList";
+
+import "./YelpApp.css";
 
 class YelpApp extends Component {
   constructor(props) {
@@ -33,11 +34,12 @@ class YelpApp extends Component {
       <div className="YelpApp">
         <SearchForm onFormSubmit={this.onFormSubmit} />
         <WineryList searchLocationQuery={this.state.searchLocationQuery} />
+        
       </div>
     );
   }
 }
 
-library.add(faUtensils, faSearchLocation, faPhone, faMapMarkerAlt);
+// library.add(faUtensils, faSearchLocation, faPhone, faMapMarkerAlt);
 
 export default YelpApp;

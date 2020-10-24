@@ -1,21 +1,21 @@
 import React from "react";
+
 import Header from "../components/Header";
+import Jumbotron from "../components/Jumbotron";
+import Navbar from "../components/Navbar";
+import Container from "../components/Container";
 import Wrapper from "../components/Wrapper";
 import Card from "../components/Card";
 import Col from "../components/Col";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Row from "../components/Row";
-import Container from "../components/Container";
-import Jumbotron from "../components/Jumbotron";
+import Footer from "../components/Footer";
 
 
 import WineCard from "../components/WineCard";
 import { wineDb } from "../utils/API";
 import "../styles/WineCard.css";
 
-
-import YelpApp from "../YelpApp";
+import YelpApp from "../Yelp/YelpApp";
 
 function Italy() {
    return (
@@ -23,11 +23,8 @@ function Italy() {
         <Header />
         {/* <Jumbotron />   */}
         <Container>
-       
         <Col size="lg-2 sm-12">
-      
         </Col>
-
         <Col size="lg-10 sm-12">
           <h2 className="page-title">Italy</h2>
           <hr />
@@ -44,33 +41,29 @@ function Italy() {
             from Italy
           </p>
         </Col>
-
-
-
-
         </Container>
         
         <Container>
-            <WineCard />
+          <WineCard />
         </Container>
 
         <Container>
-        <YelpApp />
+          <WineCard />
         </Container>
 
+        <Container>
+          <WineCard />
+        </Container>
 
-      <Container>
-        <WineCard />
-      </Container>
+        <Container>
+          <WineCard />
+        </Container>
 
-      <Container>
-        <WineCard />
-      </Container>
+        {/* <Container>
+          <YelpApp />
+        </Container> */}
 
-      <Container>
-     </Container>
-
-      <Footer />
+        <Footer />
     </div>
   );
 }

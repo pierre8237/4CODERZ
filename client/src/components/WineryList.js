@@ -37,7 +37,8 @@ class WineryList extends Component {
             Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`
         },
          params: {
-            categories: "Wineries",
+            location: "Connecticut",
+            term: "Wineries",
         }
         })
         .then((res) => {
