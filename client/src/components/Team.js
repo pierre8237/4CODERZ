@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/Team.css";
 
 import Mathew from "./Images/mathew (1).png";
-import Colin from "./Images/colin (1).png";
 import Aimee from "./Images/aimee (1).png";
 import Pierre from "./Images/pierre (1).png";
 import Container from "./Container";
@@ -56,20 +55,7 @@ function Team() {
     </div>
   </div>
   
-  <div class="column">
-    <div class="card">
-      <img src={Colin} alt="Colin" height="330px"  />
-      <div class="container">
-        <h2>Colin Schlank</h2>
-        <p class="title">Developer</p>
-        <p></p>
-        <p>colinschlank@yahoo.com</p>
-        <p><a href="https://github.com/colinschlank">GitHub </a></p>
 
-      </div>
-
-     </div>
-     </div>
      </div>
 
     </Container>
