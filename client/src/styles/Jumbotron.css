@@ -6,9 +6,10 @@
   background-color: transparent;
   border-bottom: 5px solid rgb(12, 12, 11);
   text-align: center;
+  text-justify: auto;
   text-decoration: bold;
   color: white;
-  padding: 100px;
+  padding: 40px;
   height: 500px;
 }
 
@@ -18,6 +19,6 @@
     font-size: 50px;
   }
   .jumbotron {
-    height: 200px;
+    height: 400px;
   }
 }

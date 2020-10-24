@@ -9,18 +9,18 @@ import Row from "../components/Row";
 import Container from "../components/Container";
 import Jumbotron from "../components/Jumbotron";
 
+
 import WineCard from "../components/WineCard";
 import { wineDb } from "../utils/API";
 import "../styles/WineCard.css";
+
 
 import YelpApp from "../YelpApp";
 import WineryList from "../components/WineryList";
 import SearchForm from "../components/SearchForm";
 
-
-
-
 function France() {
+
     return (
       <div>
         <Header />
@@ -30,35 +30,50 @@ function France() {
         <Col size="lg-2 sm-12">
         </Col>
 
+
         <Col size="lg-10 sm-12">
-        <h2 className="page-title">France</h2>
+          <h2 className="page-title">France</h2>
           <hr />
-          <p className="description">Featured
-          <a href="https://www.worldwidewinetours.com/france/"
-            rel="noopener noreferrer"
-            target="_blank">
-            {" "}
-            wines
+          <p className="description">
+            Featured
+            <a
+              href="https://www.worldwidewinetours.com/france/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {" "}
+              wines
             </a>{" "}
             from France
-            </p>
+          </p>
         </Col>
-        </Container>
 
-        <Container>
-            <WineCard />
-        </Container>
-        
-        <Container>
-   
+      </Container>
+
+      <Container>
+        <WineCard />
+      </Container>
+
+      <Container>
+        <WineCard />
+      </Container>
+
+      <Container>
+        <WineCard />
+      </Container>
+
+      <Container>
+        <WineCard />
+      </Container>
+
+      <Container>
         <YelpApp />
-     
-      
-        </Container>
+      </Container>
 
-        <Footer />
-      </div>
-    );
+      <Footer />
+    </div>
+  );
+
 }
- 
+
 export default France;

@@ -11,13 +11,14 @@ import Wrapper from "../components/Wrapper";
 function Jumbotron(props) {
   return (
     <Container>
-    <div className="jumbotron jumbotron-fluid">
-      <div className="jumbodisplay">
-        <h1 className="display-4">
-          Dionysus <i class="fas fa-wine-bottle"></i>
-        </h1>
+      <div className="jumbotron jumbotron-fluid">
+        <div className="jumbodisplay">
+          <h1 className="display-4">
+            Dionysus <i className="fas fa-wine-bottle"></i>
+          </h1>
+        </div>
+
       </div>
-    </div>
     </Container>
   );
 }

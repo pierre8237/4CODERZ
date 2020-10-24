@@ -47,7 +47,7 @@ class SearchForm extends Component {
                     type = "submit"
                     className = "searchForm__button"
                     >Search
-                    <FontAwesomeIcon icon="search-location" className="searchForm__icon"/>
+                    <FontAwesomeIcon icon="search" className="searchForm__icon"/>
                     </button>
                 </form>
             </div>

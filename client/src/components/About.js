@@ -12,9 +12,11 @@ import "../styles/About.css"
 
 function About() {
     return (
-<Container>     
+<Container> 
+    
 <div>
       <Row>
+
       <h2 className="about text-center" id="about1" > Mission Statement.</h2>
       <h4 className="about text-center">Our mission is to remove the mystery from cheese and wine pairings.
       We want to give you the power to recreate an exceptional cheese, charcuterie & wine pairing experience at your home.
