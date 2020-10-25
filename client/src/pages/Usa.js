@@ -13,7 +13,7 @@ import UsaRedb from "../components/WineCards/USACards/UsaRedWineCard2";
 import UsaWhite from "../components/WineCards/USACards/UsaWhiteWineCard";
 import UsaWhiteb from "../components/WineCards/USACards/UsaWhiteWineCard2";
 
-import YelpApp from "../YelpApp";
+import YelpApp from "../Yelp/YelpApp";
 
 function Usa() {
   return (

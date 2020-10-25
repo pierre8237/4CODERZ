@@ -13,14 +13,13 @@ import SpainWhite from "../components/WineCards/SpainCards/SpainWhiteWineCard";
 import SpainRedb from "../components/WineCards/SpainCards/SpainRedWineCard2";
 import SpainWhiteb from "../components/WineCards/SpainCards/SpainWhiteWineCard2";
 
-import YelpApp from "../YelpApp";
+import YelpApp from "../Yelp/YelpApp";
 
 function Spain() {
   return (
     <div>
       <Header />
       {/* <Jumbotron />   */}
-
       <Container>
         <Col size="lg-2 sm-12"></Col>
         <Col size="lg-10 sm-12">

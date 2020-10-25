@@ -16,7 +16,7 @@ function ContactUs() {
 <div id="myContact" class="container">
   {/* <h2>Contact Us</h2> */}
       <div id="my-contact" class="row">
-        <form action="action_page.php">
+        <form id="form" action="action_page.php">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Name" />
 

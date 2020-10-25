@@ -1,5 +1,7 @@
 import React from "react";
+
 import Header from "../components/Header";
+
 // import Wrapper from "../components/Wrapper";
 // import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -8,16 +10,18 @@ import Container from "../components/Container";
 import Col from "react-bootstrap/Col";
 // import Card from "react-bootstrap/Card";
 
+
 import FranceRed from "../components/WineCards/FranceCards/franceRedWineCard";
 import FranceRedb from "../components/WineCards/FranceCards/franceRedWineCard2";
 import FranceWhite from "../components/WineCards/FranceCards/franceWhiteWineCard";
 import FranceWhiteb from "../components/WineCards/FranceCards/franceWhiteWineCard2";
 
-import YelpApp from "../YelpApp";
-import WineryList from "../components/WineryList";
-import SearchForm from "../components/SearchForm";
+// import YelpApp from "../Yelp/YelpApp";
+// import WineryList from "../components/WineryList";
+// import SearchForm from "../components/SearchForm";
 
 function France() {
+
   return (
     <div>
       <Header />
@@ -58,9 +62,9 @@ function France() {
         <FranceWhiteb />
       </Container>
 
-      <Container>
+      {/* <Container>
         <YelpApp />
-      </Container>
+      </Container> */}
 
       <Footer />
     </div>
