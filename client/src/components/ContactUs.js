@@ -1,20 +1,20 @@
 import React from "react";
-import "../styles/Contact.css";
-import Row from "../components/Row";
-import Col from "../components/Col";
-import Img from "../components/Img";
-import Container from "../components/Container";
-import Card from "../components/Card";
-import Wrapper from "../components/Wrapper";
+import "../styles/ContactUs.css";
+import Row from "./Row";
+import Col from "./Col";
+import Img from "./Img";
+import Container from "./Container";
+import Card from "./Card";
+import Wrapper from "./Wrapper";
 
 
 
-function Contact() {
+function ContactUs() {
   return (
 <Container>
 <div>
 <div id="myContact" class="container">
-  <h2>Contact Us</h2>
+  {/* <h2>Contact Us</h2> */}
       <div id="my-contact" class="row">
         <form action="action_page.php">
           <label for="name">Name</label>
@@ -40,9 +40,9 @@ function Contact() {
         </form>
       </div>
 </div>
-</div> 
-</Container> 
-  );
+</div>
+</Container>
+);
 }
 
-export default Contact;
+export default ContactUs;

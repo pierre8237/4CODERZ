@@ -14,6 +14,7 @@ import Spain from "./pages/Spain";
 import Usa from "./pages/Usa";
 import Gallery from "./pages/Gallery";
 import Img from "./pages/Gallery";
+import Contact from "./pages/Contact";
 
 import SearchForm from "./components/SearchForm";
 import WineryList from "./components/WineryList";
@@ -23,7 +24,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={Cover} />
-        <Route exact path={["/", "/home"]}>
+        <Route exact path="/home">
           <Home />
         </Route>
         <Route exact path="/france">
@@ -41,9 +42,13 @@ function App() {
         <Route exact path="/gallery">
           <Gallery />
         </Route>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
       </Switch>
     </Router>
   );
 }
+
 
 export default App;

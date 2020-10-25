@@ -65,6 +65,7 @@ function France() {
       <Footer />
     </div>
   );
+
 }
 
 export default France;
