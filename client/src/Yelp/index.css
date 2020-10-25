@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Special+Elite");
 
-@import "Abstracts/mixins.scss";
-@import "Abstracts/variables.scss";
+/* @import "Abstracts/mixins.css";
+@import "Abstracts/variables.css";
 
-@import "Base/setup.scss";
-@import "Base/typography.scss";
+@import "Base/setup.css";
+@import "Base/typography.css"; */
 
-@import "Components/searchForm.scss";
-@import "Components/restaurantList.scss";
+@import "styles/searchForm.css";
+@import "styles/restaurantList.css";
 
-@import "Layouts/header.scss";
-@import "Layouts/footer.scss";
+/* @import "Layouts/header.css";
+@import "Layouts/footer.css"; */
 
-@import "Pages/app.scss";
+@import "Yelp/YelpApp.css";

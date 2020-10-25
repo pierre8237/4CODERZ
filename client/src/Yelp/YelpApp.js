@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUtensils, faSearchLocation, faPhone, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
@@ -7,14 +8,15 @@ import { faUtensils, faSearchLocation, faPhone, faMapMarkerAlt} from '@fortaweso
 import Container from '../components/Container';
 import SearchForm from '../components/SearchForm';
 import RestaurantList from '../components/RestaurantList';
+
 // import Footer from './Components/Footer';
 import './YelpApp.css';
 
 
 
 class YelpApp extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       searchLocationQuery: null
     };
@@ -27,17 +29,20 @@ class YelpApp extends Component {
   }
 
   render() {
+    
     return (
+      
       <div className="App">
         <Container
           title = 'Wineries'
           tagline = 'Visit a winery in your area.'
         />
+       
         <SearchForm onFormSubmit = {this.onFormSubmit}/>
-        <RestaurantList 
-          searchLocationQuery = {this.state.searchLocationQuery}/> 
+        <RestaurantList searchLocationQuery = {this.state.searchLocationQuery}/> 
         
       </div>
+      
     );
   }
 }
