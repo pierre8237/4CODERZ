@@ -1,15 +1,16 @@
 import React from "react";
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Container from "../components/Container";
 
+import Header from "../components/Header";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Container from "../components/Container";
 // import Jumbotron from "../components/Jumbotron";
+import About from "../components/About";
 import Map from "../components/Map";
 import Wines from "../components/Wines";
-import Header from "../components/Header";
-import ContactUs from "../components/ContactUs";
-import Footer from "../components/Footer";
 import Team from "../components/Team";
-import About from "../components/About";
+import Footer from "../components/Footer";
+
+
 
 
  
@@ -29,7 +30,6 @@ function Home() {
         <Map />
         <Wines />
         <Team />
-        {/* <Contact /> */}
         <Footer />
        </div>
     );

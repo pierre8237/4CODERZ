@@ -1,4 +1,4 @@
-.WineryList {
+.RestuarantList {
   grid-area: gallery;
   @include border;
 
@@ -8,7 +8,7 @@
   }
 }
 
-.WineryInfo {
+.RestaurantInfo {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

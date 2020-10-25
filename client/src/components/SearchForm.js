@@ -1,8 +1,5 @@
-import React, {Component} from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-
-
+import React, {Component} from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class SearchForm extends Component {
     constructor() {
@@ -22,32 +19,31 @@ class SearchForm extends Component {
         e.preventDefault();
     
         this.props.onFormSubmit(this.state.searchLocationQuery)
-    };
-
-  
+    }
 
     render(){
         return (
             <div className = "searchForm">
-                 <form onSubmit={(e) => this.handleFormSubmit(e)}>
+                {/*add an event listener of form submit so the state only get set when the form is submitted*/}
+                <form onSubmit={(e) => this.handleFormSubmit(e)}>
                     <label 
-                    htmlFor = "location"
-                    arialabel = "enter address, neighbourhood, city, province or postal code"
-                    className = "searchForm__label"
-                    >Enter your location</label>
+                    htmlFor = 'location'
+                    arialabel = 'enter address, neighbourhood, city, province or postal code'
+                    className = 'searchForm__label'
+                    >I am looking for a winery near</label>
                     <input 
-                    type = "text"
-                    id = "location"
-                    placeholder = "address, neighbourhood, city, province or postal code"
+                    type = 'text'
+                    id = 'location'
+                    placeholder = 'address, neighbourhood, city, province or postal code'
                     value = {this.state.searchLocationQuery}
                     onChange = {this.handleSearchChange}
-                    className = "searchForm__input"
+                    className = 'searchForm__input'
                     />
                     <button 
-                    type = "submit"
-                    className = "searchForm__button"
+                    type = 'submit'
+                    className = 'searchForm__button'
                     >Search
-                    <FontAwesomeIcon icon="search" className="searchForm__icon"/>
+                    <FontAwesomeIcon className="searchForm__icon"/>
                     </button>
                 </form>
             </div>

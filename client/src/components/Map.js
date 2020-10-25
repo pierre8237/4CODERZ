@@ -34,7 +34,7 @@ const handleClick = (e, countryCode) => {
 
 function Map() {
 
-  const { getCode, getName, getData } = require("country-list");
+const { getCode, getName, getData } = require("country-list");
 console.log(getName('IS'));  // Iceland
 console.log(getCode('Iceland')); // IS
 console.log(getData());  //gets an array of all countries names & codes: [{code: "AU", name: "Australia"}]
@@ -45,6 +45,7 @@ console.log(getData());  //gets an array of all countries names & codes: [{code:
 
 
  <section className="section" >
+      <Row />
       <h2 id="map1">Major Wine producing countries.</h2>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.css" type="text/css" media="screen"/>
  </section>

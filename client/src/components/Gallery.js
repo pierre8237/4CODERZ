@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../styles/Wines.css";
+import "../styles/Gallery.css";
 import Col from "./Col";
 import GalleryImg from "../GalleryImg";
 import Img from "./Img1";
@@ -18,7 +18,7 @@ class Gallery extends Component {
       
       // <Wrapper>
       <Container>
-      <div style={{display: "inline-block"}}>
+      <div id="gallery" style={{display: "inline-block"}}>
       <div className="row">
       <div className="col-sm-12" >
 

@@ -1,5 +1,5 @@
 .coverpage {
-  font-family: "URW Chancery L", cursive;
+  font-family: "Raleway", sans-serif;
   background: url("../components/Images/wineglass.jpg") center;
   background-size: 500px;
   background-color: white;
@@ -15,6 +15,7 @@ h1 {
   font-size: 50px;
 }
 h5 {
+  font-family: "Raleway", sans-serif;
   color: red;
 }
 #root {
