@@ -1,15 +1,15 @@
 /* html {
   background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.2)
-  );
-  url(../components/Images/wood.jpg);
+      to bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url(../assets/bgImg.jpg);
   background-size: contain;
   width: 100%;
 } */
 
-/* .YelpApp {
+.App {
   display: grid;
   grid-template-areas:
     "header header header header"
@@ -17,4 +17,4 @@
     "gallery gallery gallery gallery"
     "footer footer footer footer";
   margin: 3rem;
-} */
+}

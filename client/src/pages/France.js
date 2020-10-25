@@ -17,9 +17,9 @@ import { wineDb } from "../utils/API";
 import "../styles/WineCard.css";
 
 
-import YelpApp from "../Yelp/YelpApp";
-import WineryList from "../components/WineryList";
-import SearchForm from "../components/SearchForm";
+// import YelpApp from "../Yelp/YelpApp";
+// import WineryList from "../components/WineryList";
+// import SearchForm from "../components/SearchForm";
 
 function France() {
 

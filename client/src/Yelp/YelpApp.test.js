@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import YelpApp from './Yelp/YelpApp';
+import YelpApp from './YelpApp';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

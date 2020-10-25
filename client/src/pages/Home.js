@@ -1,7 +1,7 @@
 import React from "react";
 
 import Header from "../components/Header";
-import Jumbotron from 'react-bootstrap/Jumbotron';
+import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "../components/Container";
 // import Jumbotron from "../components/Jumbotron";
 import About from "../components/About";

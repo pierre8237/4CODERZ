@@ -12,8 +12,8 @@ import Img from "./pages/Gallery";
 import Search from "./pages/Search";
 import Contact from "./pages/Contact";
 
-import SearchForm from "./components/SearchForm";
-import WineryList from "./components/WineryList";
+// import SearchForm from "./components/SearchForm";
+// import WineryList from "./components/WineryList";
 
 function App() {
   return (

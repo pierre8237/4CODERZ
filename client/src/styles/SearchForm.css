@@ -1,4 +1,4 @@
-/* .searchForm {
+.searchForm {
   grid-area: searchForm;
   @include border;
   padding: 2rem 0;
@@ -61,4 +61,4 @@
     margin-left: 1rem;
     color: $primary-color;
   }
-} */
+}

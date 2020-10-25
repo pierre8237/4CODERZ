@@ -34,7 +34,7 @@ const handleClick = (e, countryCode) => {
 
 function Map() {
 
-  const { getCode, getName, getData } = require("country-list");
+const { getCode, getName, getData } = require("country-list");
 console.log(getName('IS'));  // Iceland
 console.log(getCode('Iceland')); // IS
 console.log(getData());  //gets an array of all countries names & codes: [{code: "AU", name: "Australia"}]
