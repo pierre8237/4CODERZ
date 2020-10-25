@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class RestaurantList extends Component {
 
@@ -37,11 +37,10 @@ class RestaurantList extends Component {
         //required authorization format from API 
         headers: {
             //to get the API from the .env file use process.env.{variable name}
-            Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`
+            Authorization: `Bearer K7OLRerotbFJhXnvePUdmvlm6honCwebxQ521uL109PxqIFnyaIBenhDdz6V5VIgcIpAmkmQuD8b-ZTo6YUwjUX8bm38gXZPRY41EkGI1iHezUy57uUt2ekIpUyUX3Yx`
         },
-        //option params passed to API call to retrieve only breakfast and lunch spots 
+        //option params passed to API call to retrieve
         params: {
-            location: {locationSearched},
 
             categories: 'wineries',
         }
@@ -50,8 +49,8 @@ class RestaurantList extends Component {
             console.log(res.data.businesses)
             //change the state of App to reflect on the result we are given from the API
             //at the same time, setting the loading state to false 
-            this.setState({ results: res.data.businesses, loading: false })
-        })
+            })
+        
         .catch((err) => {
             //fire the errorState message if there is no information return from the API
             this.setState({ errorState: `Sorry we coudln't find information related to the location you search, do you want to try something else?`, loading: false })
@@ -64,7 +63,7 @@ class RestaurantList extends Component {
         )
     }
 
-    renderRestaurantInfo () {
+    render () {
         
         const RestaruantList = this.state.results.map((result) => {
             
@@ -77,18 +76,20 @@ class RestaurantList extends Component {
                     <h2 className = "heading-tertiary RestaurantInfo__name">{result.name}</h2>
                     
                     <p className = "RestaurantInfo__para">
-                        <FontAwesomeIcon 
-                        icon = "map-marker-alt" 
+                        {/* <FontAwesomeIcon  */}
+                        {/* icon = "map-marker-alt" 
                         className = "RestaurantInfo__icon"
-                        aria-label = "address:" />
+                        aria-label = "address:"  */}
+                        {/* /> */}
                         {result.location.display_address[0]}, {result.location.display_address[1]}
                     </p>
                     
                     <p className = "RestaurantInfo__para">
-                        <FontAwesomeIcon 
-                        icon = "phone" 
+                        {/* <FontAwesomeIcon  */}
+                        {/* icon = "phone" 
                         className = "RestaurantInfo__icon"
-                        aria-label = "phone number:" />
+                        aria-label = "phone number:"  */}
+                        {/* /> */}
                         {result.phone}
                     </p>
 
@@ -121,12 +122,14 @@ class RestaurantList extends Component {
         return (
             
             <section className="RestuarantList">
-                {this.state.results.length ? this.renderRestaurantInfo() : this.renderEmptyState()}
+                {this.state.results}
 
-                {/*conditional rendering for error state - when this.state.errorState is not true*/}
-                {!!this.state.errorState &&
+                {/* {this.state.results.length ? this.renderRestaurantInfo() : this.renderEmptyState()} */}
+
+                 {/*conditional rendering for error state - when this.state.errorState is not true*/}
+                 {/* {!!this.state.errorState &&
                     <h1>{this.state.error}</h1>
-                }   
+                }    */}
             </section>
         )}
 
