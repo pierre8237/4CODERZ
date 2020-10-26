@@ -4,7 +4,7 @@ import Header from "../components/Header";
 
 import Footer from "../components/Footer";
 import Container from "../components/Container";
-
+// import Col from "../components/Col";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 

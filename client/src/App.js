@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import Cover from "./pages/Cover";
 import Home from "./pages/Home";
 import France from "./pages/France";
@@ -53,6 +53,5 @@ function App() {
     </Router>
   );
 }
-
 
 export default App;

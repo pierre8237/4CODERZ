@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import Mestral from "../../Images/wineImages/mestral2.jpg";
+import Mestral from "../../Images/wineImages/mestral3.jpg";
 import Table from "react-bootstrap/Table";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
@@ -27,7 +27,7 @@ function SpainWhiteb(props) {
   }
   wineDb.getPairings();
   return (
-    <Card mb={1} style={{ width: "auto", maxWidth: "100%" }}>
+    <Card mb={1} style={{ width: "auto", maxWidth: "100%", display: "fluid" }}>
       <Row>
         <Col md={4}>
           <Image src={Mestral} alt="..." fluid />
@@ -38,35 +38,62 @@ function SpainWhiteb(props) {
             {wines.length ? (
               <List>
                 <ListItem>
-                  <strong>{wines[3].From}</strong>
+                  <strong>
+                    {"Country : "}
+                    {wines[3].From}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[3].Brand_Name}</strong>
+                  <strong>
+                    {"Brand Label : "}
+                    {wines[3].Brand_Name}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[3].Cheese_Pairing}</strong>
+                  <strong>
+                    {"Cheese Pairing : "}
+                    {wines[3].Cheese_Pairing}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[3].Drinking_Temperature}</strong>
+                  <strong>
+                    {"Drinking Temperature : "}
+                    {wines[3].Drinking_Temperature}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[3].Grape}</strong>
+                  <strong>
+                    {"Grape : "}
+                    {wines[3].Grape}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[3].Price_Point}</strong>
+                  <strong>
+                    {"Price-Point : "}
+                    {wines[3].Price_Point}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[3].Region}</strong>
+                  <strong>
+                    {"Region : "}
+                    {wines[3].Region}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[3].Soil}</strong>
+                  <strong>
+                    {"Soil : "}
+                    {wines[3].Soil}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[3].Vintage}</strong>
+                  <strong>
+                    {"Vintage : "}
+                    {wines[3].Vintage}
+                  </strong>
                 </ListItem>
               </List>
             ) : (
-              <h3>No Results to Display</h3>
+              <h3>Loading...</h3>
             )}
           </Card.Body>
         </Col>

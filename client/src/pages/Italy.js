@@ -3,17 +3,16 @@ import React from "react";
 // import "../styles/WineCard.css";
 
 import Header from "../components/Header";
-import Jumbotron from "../components/Jumbotron";
-import Navbar from "../components/Navbar";
-import Container from "../components/Container";
-import Wrapper from "../components/Wrapper";
+// import Jumbotron from "../components/Jumbotron";
+// import Navbar from "../components/Navbar";
+// import Wrapper from "../components/Wrapper";
 
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Container from "../components/Container";
-import Jumbotron from "../components/Jumbotron";
+// import Jumbotron from "../components/Jumbotron";
 import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
+// import Card from "react-bootstrap/Card";
 
 import ItalyRed from "../components/WineCards/ItalyCards/italyRedWineCard";
 import ItalyRedb from "../components/WineCards/ItalyCards/italyRedWineCard2";
@@ -43,7 +42,6 @@ function Italy() {
             from Italy
           </p>
         </Col>
-
       </Container>
 
       <Container>
@@ -61,6 +59,7 @@ function Italy() {
       <Container>
         <ItalyWhiteb />
       </Container>
+
 
         <Footer />
     </div>
