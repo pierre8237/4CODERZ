@@ -16,8 +16,6 @@ import WineCard from "../components/WineCard";
 import { wineDb } from "../utils/API";
 import "../styles/WineCard.css";
 
-import YelpApp from "../Yelp/YelpApp";
-
 
 let db = wineDb.getPairings().then(res => console.log(res.data));
 
@@ -87,11 +85,7 @@ function Usa() {
       <Container>
         <WineCard />
       </Container>
-    
-    {/* <Container>
-    <YelpApp />
-     </Container> */}
-    
+
       <Footer />
     </div>
   );

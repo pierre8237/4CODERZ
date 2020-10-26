@@ -15,7 +15,6 @@ import WineCard from "../components/WineCard";
 import { wineDb } from "../utils/API";
 import "../styles/WineCard.css";
 
-import YelpApp from "../Yelp/YelpApp";
 
 function Spain () {
     return (
@@ -57,10 +56,6 @@ function Spain () {
       <Container>
         <WineCard />
       </Container>
-
-      {/* <Container>
-      <YelpApp />
-      </Container> */}
 
       <Footer />
     </div>
