@@ -29,7 +29,7 @@ function UsaRedb(props) {
 
   wineDb.getPairings();
   return (
-    <Card mb={1} style={{ width: "auto", maxWidth: "100%" }}>
+    <Card mb={1} style={{ width: "auto", maxWidth: "100%", display: "fluid" }}>
       <Row>
         <Col md={4}>
           <Image src={Sokol} alt="..." fluid />
@@ -40,35 +40,62 @@ function UsaRedb(props) {
             {wines.length ? (
               <List>
                 <ListItem>
-                  <strong>{wines[2].From}</strong>
+                  <strong>
+                    {"Country : "}
+                    {wines[2].From}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[2].Brand_Name}</strong>
+                  <strong>
+                    {"Brand Label : "}
+                    {wines[2].Brand_Name}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[2].Cheese_Pairing}</strong>
+                  <strong>
+                    {"Cheese Pairing : "}
+                    {wines[2].Cheese_Pairing}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[2].Drinking_Temperature}</strong>
+                  <strong>
+                    {"Drinking Temperature : "}
+                    {wines[2].Drinking_Temperature}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[2].Grape}</strong>
+                  <strong>
+                    {"Grape : "}
+                    {wines[2].Grape}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[2].Price_Point}</strong>
+                  <strong>
+                    {"Price-Point : "}
+                    {wines[2].Price_Point}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[2].Region}</strong>
+                  <strong>
+                    {"Region : "}
+                    {wines[2].Region}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[2].Soil}</strong>
+                  <strong>
+                    {"Soil : "}
+                    {wines[2].Soil}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[2].Vintage}</strong>
+                  <strong>
+                    {"Vintage : "}
+                    {wines[2].Vintage}
+                  </strong>
                 </ListItem>
               </List>
             ) : (
-              <h3>No Results to Display</h3>
+              <h3>Loading...</h3>
             )}
           </Card.Body>
         </Col>

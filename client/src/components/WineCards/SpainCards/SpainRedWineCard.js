@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Murrieta from "../../Images/wineImages/Murrieta2.jpg";
+import Murrieta from "../../Images/wineImages/murrieta3.jpg";
 import Table from "react-bootstrap/Table";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
@@ -28,7 +28,7 @@ function SpainRed(props) {
 
   wineDb.getPairings();
   return (
-    <Card mb={1} style={{ width: "auto", maxWidth: "100%" }}>
+    <Card mb={1} style={{ width: "auto", maxWidth: "100%", display: "fluid" }}>
       <Row>
         <Col md={4}>
           <Image src={Murrieta} alt="..." fluid />
@@ -39,35 +39,62 @@ function SpainRed(props) {
             {wines.length ? (
               <List>
                 <ListItem>
-                  <strong>{wines[0].From}</strong>
+                  <strong>
+                    {"Country : "}
+                    {wines[0].From}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[0].Brand_Name}</strong>
+                  <strong>
+                    {"Brand Label : "}
+                    {wines[0].Brand_Name}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[0].Cheese_Pairing}</strong>
+                  <strong>
+                    {"Cheese Pairing : "}
+                    {wines[0].Cheese_Pairing}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[0].Drinking_Temperature}</strong>
+                  <strong>
+                    {"Drinking Temperature : "}
+                    {wines[0].Drinking_Temperature}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[0].Grape}</strong>
+                  <strong>
+                    {"Grape : "}
+                    {wines[0].Grape}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[0].Price_Point}</strong>
+                  <strong>
+                    {"Price-Point : "}
+                    {wines[0].Price_Point}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[0].Region}</strong>
+                  <strong>
+                    {"Region : "}
+                    {wines[0].Region}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[0].Soil}</strong>
+                  <strong>
+                    {"Soil : "}
+                    {wines[0].Soil}
+                  </strong>
                 </ListItem>
                 <ListItem>
-                  <strong>{wines[0].Vintage}</strong>
+                  <strong>
+                    {"Vintage : "}
+                    {wines[0].Vintage}
+                  </strong>
                 </ListItem>
               </List>
             ) : (
-              <h3>No Results to Display</h3>
+              <h3>Loading...</h3>
             )}
           </Card.Body>
         </Col>
