@@ -1,74 +1,84 @@
-import React from "react";
-// import { Card, CardTitle, Card } from "reactstrap";
-import "../styles/WineCard.css";
-// import Louis from "./Images/wineImages/louis.jpg";
-function WineCard(props) {
-  console.log(props);
-  return (
-    <div className="card mb-1" style={{ maxWidth: "100%" }}>
-      <div className="row no-gutters">
-        <div className="col-md-4">
-          {/* <img src={Louis} className="card-img" alt="..." /> */}
-        </div>
-        <div className="col-md-8">
-          <div className="card-body">
-            <h5 className="card-title">Featured Wine</h5>
-            <div className="table-responsive-sm">
-              <table className="table table-borderless ">
-                {/* Wrap this table within the map {} map the data that your passing back ex:if there brandname */}
-                <tbody>
-                  <tr>
-                    <th scope="row">Brand Name:</th>
+// import React, { useState, useEffect } from "react";
+// import Louis from "./Images/wineImages/louis2.jpg";
 
-                    <td>Wino</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Cheese Pairing:</th>
+// import Table from "react-bootstrap/Table";
+// import Card from "react-bootstrap/Card";
+// import Col from "react-bootstrap/Col";
+// import Row from "react-bootstrap/Row";
+// import Image from "react-bootstrap/Image";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "../styles/WineCard.css";
+// import { List, ListItem } from "./List";
+// import { wineDb } from "../utils/API";
 
-                    <td>Cheddar</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Drinking Temperature:</th>
-                    <td>34</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">From:</th>
+// function WineCard(props) {
+//   console.log(props);
+//   let db = wineDb.getPairings().then(res => console.log(res.data));
 
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Grape:</th>
+//   const [wines, setWines] = useState([]);
+//   const [formObject, setFormObject] = useState({});
 
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Price Point:</th>
+//   useEffect(() => {
+//     loadWine();
+//   }, []);
 
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Region:</th>
+//   function loadWine() {
+//     const allWines = wineDb.getPairings().then(res => {
+//       // db = res.data;
+//       const usaWines = res.data.filter(wines => wines.From == "USA");
+//       console.log(usaWines);
+//       setWines(usaWines);
+//     });
+//   }
 
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Soil:</th>
+//   wineDb.getPairings();
+//   return (
+//     <Card mb={1} style={{ width: "auto", maxWidth: "100%" }}>
+//       <Row>
+//         <Col md={4}>
+//           <Image src={Louis} alt="..." fluid />
+//         </Col>
+//         <Col md={8}>
+//           <Card.Body>
+//             <Card.Title>Featured Wine</Card.Title>
+//             {wines.length ? (
+//               <List>
+//                 <ListItem>
+//                   <strong>{wines[0].From}</strong>
+//                 </ListItem>
+//                 <ListItem>
+//                   <strong>{wines[0].Brand_Name}</strong>
+//                 </ListItem>
+//                 <ListItem>
+//                   <strong>{wines[0].Cheese_Pairing}</strong>
+//                 </ListItem>
+//                 <ListItem>
+//                   <strong>{wines[0].Drinking_Temperature}</strong>
+//                 </ListItem>
+//                 <ListItem>
+//                   <strong>{wines[0].Grape}</strong>
+//                 </ListItem>
+//                 <ListItem>
+//                   <strong>{wines[0].Price_Point}</strong>
+//                 </ListItem>
+//                 <ListItem>
+//                   <strong>{wines[0].Region}</strong>
+//                 </ListItem>
+//                 <ListItem>
+//                   <strong>{wines[0].Soil}</strong>
+//                 </ListItem>
+//                 <ListItem>
+//                   <strong>{wines[0].Vintage}</strong>
+//                 </ListItem>
+//               </List>
+//             ) : (
+//               <h3>No Results to Display</h3>
+//             )}
+//           </Card.Body>
+//         </Col>
+//       </Row>
+//     </Card>
+//   );
+// }
 
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Vintage:</th>
-
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default WineCard;
+// export default WineCard;

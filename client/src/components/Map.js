@@ -9,8 +9,6 @@ import Container from "../components/Container";
 import Card from "../components/Card";
 import Wrapper from "../components/Wrapper";
 
-
-
 const mapData = {
   US: 90,
   FR: 40,
@@ -18,7 +16,6 @@ const mapData = {
   ES: 70,
   AU: 60,
   CL: 50
-
 };
 
 // const styles = {
@@ -30,7 +27,6 @@ const mapData = {
 const handleClick = (e, countryCode) => {
   console.log(countryCode);
 };
-
 
 function Map() {
 

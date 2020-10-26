@@ -1,28 +1,32 @@
 import React from "react";
 
+// import "../styles/WineCard.css";
+
 import Header from "../components/Header";
 import Jumbotron from "../components/Jumbotron";
 import Navbar from "../components/Navbar";
 import Container from "../components/Container";
 import Wrapper from "../components/Wrapper";
-import Card from "../components/Card";
-import Col from "../components/Col";
-import Row from "../components/Row";
+
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Container from "../components/Container";
+import Jumbotron from "../components/Jumbotron";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
 
-
-import WineCard from "../components/WineCard";
-import { wineDb } from "../utils/API";
-import "../styles/WineCard.css";
+import ItalyRed from "../components/WineCards/ItalyCards/italyRedWineCard";
+import ItalyRedb from "../components/WineCards/ItalyCards/italyRedWineCard2";
+import ItalyWhite from "../components/WineCards/ItalyCards/italyWhiteWineCard";
+import ItalyWhiteb from "../components/WineCards/ItalyCards/italyWhiteWineCard2";
 
 function Italy() {
-   return (
-      <div>
-        <Header />
-        {/* <Jumbotron />   */}
-        <Container>
-        <Col size="lg-2 sm-12">
-        </Col>
+  return (
+    <div>
+      <Header />
+      {/* <Jumbotron />   */}
+      <Container>
+        <Col size="lg-2 sm-12"></Col>
         <Col size="lg-10 sm-12">
           <h2 className="page-title">Italy</h2>
           <hr />
@@ -39,23 +43,24 @@ function Italy() {
             from Italy
           </p>
         </Col>
-        </Container>
-        
-        <Container>
-          <WineCard />
-        </Container>
 
-        <Container>
-          <WineCard />
-        </Container>
+      </Container>
 
-        <Container>
-          <WineCard />
-        </Container>
+      <Container>
+        <ItalyRed />
+      </Container>
 
-        <Container>
-          <WineCard />
-        </Container>
+      <Container>
+        <ItalyRedb />
+      </Container>
+
+      <Container>
+        <ItalyWhite />
+      </Container>
+
+      <Container>
+        <ItalyWhiteb />
+      </Container>
 
         <Footer />
     </div>

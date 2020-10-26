@@ -1,21 +1,20 @@
 import React from "react";
 
 import Header from "../components/Header";
-import Jumbotron from "../components/Jumbotron";
-import Navbar from "../components/Navbar";
-import Container from "../components/Container";
-import Wrapper from "../components/Wrapper";
-import Card from "../components/Card";
-import Col from "../components/Col";
-import Row from "../components/Row";
+
+// import Wrapper from "../components/Wrapper";
+// import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Container from "../components/Container";
+// import Jumbotron from "../components/Jumbotron";
+import Col from "react-bootstrap/Col";
+// import Card from "react-bootstrap/Card";
 
 
-
-import WineCard from "../components/WineCard";
-import { wineDb } from "../utils/API";
-import "../styles/WineCard.css";
-
+import FranceRed from "../components/WineCards/FranceCards/franceRedWineCard";
+import FranceRedb from "../components/WineCards/FranceCards/franceRedWineCard2";
+import FranceWhite from "../components/WineCards/FranceCards/franceWhiteWineCard";
+import FranceWhiteb from "../components/WineCards/FranceCards/franceWhiteWineCard2";
 
 // import YelpApp from "../Yelp/YelpApp";
 // import WineryList from "../components/WineryList";
@@ -23,13 +22,12 @@ import "../styles/WineCard.css";
 
 function France() {
 
-    return (
-      <div>
-        <Header />
-        {/* <Jumbotron />   */}
-        <Container>
-        <Col size="lg-2 sm-12">
-        </Col>
+  return (
+    <div>
+      <Header />
+      {/* <Jumbotron />   */}
+      <Container>
+        <Col size="lg-2 sm-12"></Col>
         <Col size="lg-10 sm-12">
           <h2 className="page-title">France</h2>
           <hr />
@@ -49,19 +47,19 @@ function France() {
       </Container>
 
       <Container>
-        <WineCard />
+        <FranceRed />
       </Container>
 
       <Container>
-        <WineCard />
+        <FranceRedb />
       </Container>
 
       <Container>
-        <WineCard />
+        <FranceWhite />
       </Container>
 
       <Container>
-        <WineCard />
+        <FranceWhiteb />
       </Container>
 
       {/* <Container>
