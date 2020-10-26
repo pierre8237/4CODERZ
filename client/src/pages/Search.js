@@ -7,9 +7,7 @@ import Footer from "../components/Footer";
 
 import WeatherInfo from "../components/WeatherInfo";
 import DateInfo from "../components/Date";
-
-import App from "../Yelp/YelpApp";
-import YelpApp from "../Yelp/YelpApp";
+import Yelp from "../components/Yelp";
 import RestaurantList from "../components/RestaurantList";
 import SearchForm from "../components/SearchForm";
 
@@ -26,10 +24,8 @@ function Search() {
     <WeatherInfo />
     </Container>
     
-    <YelpApp />
+    <Yelp />
 
-    <RestaurantList />
-  
     <Footer />
   </div>
 );

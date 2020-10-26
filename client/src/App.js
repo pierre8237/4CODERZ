@@ -15,8 +15,8 @@ import Contact from "./pages/Contact";
 // import SearchForm from "./components/SearchForm";
 // import WineryList from "./components/WineryList";
 
-// import Footer from './Components/Footer';
-// import './YelpApp.css';
+
+
 
 
 function App() {
@@ -47,6 +47,7 @@ function App() {
         </Route>
         <Route exact path="/contact">
           <Contact />
+          
         </Route>
       </Switch>
     </Router>
