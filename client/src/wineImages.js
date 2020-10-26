@@ -61,6 +61,6 @@ export default [
   },
   {
     id: 15,
-    image: require("./components/Images/wineImages/mestral3.jpg")
+    image: require("./components/Images/wineImages/mestral2.jpg")
   }
 ];
