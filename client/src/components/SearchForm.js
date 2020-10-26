@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 class SearchForm extends Component {
     constructor() {
@@ -43,7 +43,7 @@ class SearchForm extends Component {
                     type = 'submit'
                     className = 'searchForm__button'
                     >Search
-                    {/* <FontAwesomeIcon className="searchForm__icon"/> */}
+            
                     </button>
                 </form>
             </div>

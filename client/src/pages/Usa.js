@@ -13,8 +13,6 @@ import UsaRedb from "../components/WineCards/USACards/UsaRedWineCard2";
 import UsaWhite from "../components/WineCards/USACards/UsaWhiteWineCard";
 import UsaWhiteb from "../components/WineCards/USACards/UsaWhiteWineCard2";
 
-import YelpApp from "../Yelp/YelpApp";
-
 function Usa() {
   return (
     <div>
@@ -55,10 +53,6 @@ function Usa() {
       <Container>
         <UsaWhiteb />
       </Container>
-
-      {/* <Container>
-        <YelpApp />
-      </Container> */}
 
       <Footer />
     </div>

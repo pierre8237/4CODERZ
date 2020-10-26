@@ -20,8 +20,6 @@ import ItalyRedb from "../components/WineCards/ItalyCards/italyRedWineCard2";
 import ItalyWhite from "../components/WineCards/ItalyCards/italyWhiteWineCard";
 import ItalyWhiteb from "../components/WineCards/ItalyCards/italyWhiteWineCard2";
 
-import YelpApp from "../YelpApp";
-
 function Italy() {
   return (
     <div>
@@ -62,10 +60,6 @@ function Italy() {
 
       <Container>
         <ItalyWhiteb />
-      </Container>
-
-      <Container>
-        <YelpApp />
       </Container>
 
         <Footer />
