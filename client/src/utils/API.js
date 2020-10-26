@@ -6,3 +6,4 @@ export const wineDb = {
     return axios.get("/api/pairingRoutes");
   }
 };
+

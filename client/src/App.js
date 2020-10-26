@@ -15,6 +15,10 @@ import Contact from "./pages/Contact";
 // import SearchForm from "./components/SearchForm";
 // import WineryList from "./components/WineryList";
 
+
+
+
+
 function App() {
   return (
     <Router>
@@ -43,6 +47,7 @@ function App() {
         </Route>
         <Route exact path="/contact">
           <Contact />
+          
         </Route>
       </Switch>
     </Router>

@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-class RestaurantList extends Component {
+class RestaurantList extends Component 
+
+{
 
     constructor(props) {
         super(props);
@@ -37,11 +39,13 @@ class RestaurantList extends Component {
         //required authorization format from API 
         headers: {
             //to get the API from the .env file use process.env.{variable name}
-            Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`
+            Authorization: `Bearer TTpzJm4nDIgWbV6QQu14vQPrU4PyC4h8E1uCmLY_wzooKNlG6_ECu-zCi0u2I4DiqGm7Xesam7hpevmIugQtlDtjjk8oaR_WvZT82TOWPA-_mtB5bTqQTMqIMyKWX3Yx`
         },
-        //option params passed to API call to retrieve only breakfast and lunch spots 
+       
+        
+
+        //option params passed to API call to retrieve
         params: {
-            location: {locationSearched},
 
             categories: 'wineries',
         }
@@ -50,21 +54,24 @@ class RestaurantList extends Component {
             console.log(res.data.businesses)
             //change the state of App to reflect on the result we are given from the API
             //at the same time, setting the loading state to false 
-            this.setState({ results: res.data.businesses, loading: false })
-        })
+            
+            // this.setState({ results: res.data.businesses, loading: false })
+            
+            })
+        
         .catch((err) => {
             //fire the errorState message if there is no information return from the API
             this.setState({ errorState: `Sorry we coudln't find information related to the location you search, do you want to try something else?`, loading: false })
         })
     }
 
-    renderEmptyState () {
-        return (
-            <h2 className = "heading-tertiary">`Hang tight! We are working on getting you the list of best brunch spots in your neighbourhood! `</h2>
-        )
-    }
+    // renderEmptyState () {
+    //     return (
+    //         <h2 className = "heading-tertiary">`Hang tight! We are working on getting you the list of best brunch spots in your neighbourhood! `</h2>
+    //     )
+    // }
 
-    renderRestaurantInfo () {
+    render () {
         
         const RestaruantList = this.state.results.map((result) => {
             
@@ -77,37 +84,27 @@ class RestaurantList extends Component {
                     <h2 className = "heading-tertiary RestaurantInfo__name">{result.name}</h2>
                     
                     <p className = "RestaurantInfo__para">
-                        <FontAwesomeIcon 
-                        icon = "map-marker-alt" 
-                        className = "RestaurantInfo__icon"
-                        aria-label = "address:" />
                         {result.location.display_address[0]}, {result.location.display_address[1]}
                     </p>
                     
                     <p className = "RestaurantInfo__para">
-                        <FontAwesomeIcon 
-                        icon = "phone" 
-                        className = "RestaurantInfo__icon"
-                        aria-label = "phone number:" />
                         {result.phone}
                     </p>
 
-                    <img 
+                    {/* <img 
                         src = {require(`../assets/yelp_stars/regular/${result.rating}.png`)}
                         alt = {`yelp ratings: ${result.rating}/5`}
                         className = "RestaurantInfo__rating"/>
 
-                    <p className = "RestaurantInfo__reviewCount"> Based on {result.review_count} Reviews</p>
+                    <p className = "RestaurantInfo__reviewCount"> Based on {result.review_count} Reviews</p> */}
                
-                    <a 
-                        href= {result.url} 
+                    <a href= {result.url} 
                         className = "RestaurantInfo__website">
                             More infomration on Yelp
                     </a>
 
-                    <img 
-                        src = {require('../assets/YelpLogo_Trademark/Screen(R)/Yelp_trademark_RGB.png')} alt = "yelp"
-                        className = "RestaurantInfo__yelp"/>
+                    {/* <img src = {require('../assets/YelpLogo_Trademark/Screen(R)/Yelp_trademark_RGB.png')} alt = "yelp"
+                        className = "RestaurantInfo__yelp"/> */}
                 </div>  
             );
         });
@@ -121,12 +118,15 @@ class RestaurantList extends Component {
         return (
             
             <section className="RestuarantList">
-                {this.state.results.length ? this.renderRestaurantInfo() : this.renderEmptyState()}
+                {this.state.results}
 
-                {/*conditional rendering for error state - when this.state.errorState is not true*/}
-                {!!this.state.errorState &&
+
+                {/* {this.state.results.length ? this.renderRestaurantInfo() : this.renderEmptyState()} */}
+
+{/*                 
+                 {!!this.state.errorState &&
                     <h1>{this.state.error}</h1>
-                }   
+                }    */}
             </section>
         )}
 
