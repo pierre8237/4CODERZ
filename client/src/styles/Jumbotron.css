@@ -1,10 +1,10 @@
 .jumbotron {
   background-image: url("../components/Images/cheese-plate.jpg");
-  background-size: 100% 100%;
+  background-size: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: transparent;
-  border-bottom: 5px solid rgb(12, 12, 11);
+  /* border-bottom: 5px solid rgb(12, 12, 11); */
   text-align: center;
   text-justify: auto;
   text-decoration: bold;
