@@ -1,6 +1,6 @@
 import React from "react";
 
-// import "../styles/WineCard.css";
+import "../styles/WineCard.css";
 
 import Header from "../components/Header";
 // import Jumbotron from "../components/Jumbotron";
@@ -60,8 +60,7 @@ function Italy() {
         <ItalyWhiteb />
       </Container>
 
-
-        <Footer />
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 import Header from "../components/Header";
-
+import "../styles/WineCard.css";
 // import Wrapper from "../components/Wrapper";
 // import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -9,7 +9,6 @@ import Container from "../components/Container";
 // import Jumbotron from "../components/Jumbotron";
 import Col from "react-bootstrap/Col";
 // import Card from "react-bootstrap/Card";
-
 
 import FranceRed from "../components/WineCards/FranceCards/franceRedWineCard";
 import FranceRedb from "../components/WineCards/FranceCards/franceRedWineCard2";
@@ -21,7 +20,6 @@ import FranceWhiteb from "../components/WineCards/FranceCards/franceWhiteWineCar
 // import SearchForm from "../components/SearchForm";
 
 function France() {
-
   return (
     <div>
       <Header />
@@ -69,7 +67,6 @@ function France() {
       <Footer />
     </div>
   );
-
 }
 
 export default France;

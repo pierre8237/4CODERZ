@@ -1,16 +1,18 @@
 import React from "react";
 import "../styles/Team.css";
-
 import Mathew from "./Images/mathew (1).png";
 import Aimee from "./Images/aimee (1).png";
 import Pierre from "./Images/pierre (1).png";
 import Container from "./Container";
 
 
+
 function Team() {
   return (
     <div class="container">
       <div class="heading-title text-center">
+
+
                             <p class="p-top-30 half-txt"></p>
                                 <h3 class="text-uppercase">Our Team Members </h3>
                             </div>
@@ -93,7 +95,7 @@ function Team() {
                         </div>
     
                     </div>
+
   );
 }
-
 export default Team;

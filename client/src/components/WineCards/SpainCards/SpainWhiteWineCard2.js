@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import Mestral from "../../Images/wineImages/mestral3.jpg";
+import Mestral from "../../Images/wineImages/mestral2.jpg";
 import Table from "react-bootstrap/Table";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
