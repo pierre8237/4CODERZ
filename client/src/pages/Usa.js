@@ -6,19 +6,16 @@ import Jumbotron from "../components/Jumbotron";
 import Navbar from "../components/Navbar";
 import Container from "../components/Container";
 import Wrapper from "../components/Wrapper";
-import Card from "../components/Card";
+
 import Col from "../components/Col";
 import Row from "../components/Row";
 import Footer from "../components/Footer";
-
 
 import WineCard from "../components/WineCard";
 import { wineDb } from "../utils/API";
 import "../styles/WineCard.css";
 
-
 let db = wineDb.getPairings().then(res => console.log(res.data));
-
 
 function Usa() {
   const [wines, setWines] = useState([]);
@@ -34,7 +31,7 @@ function Usa() {
     Soil: "",
     Vintage: "",
 
-    Price_Point: ""
+    Price_Point: "",
   });
 
   function loadWine() {

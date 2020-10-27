@@ -11,25 +11,23 @@ import Yelp from "../components/Yelp";
 import RestaurantList from "../components/RestaurantList";
 import SearchForm from "../components/SearchForm";
 
-
 function Search() {
-
-    return (
+  return (
     <div>
-    <Header />
+      <Header />
 
-    <Container>
-    <h1>Winery Search</h1>
-    <DateInfo />
-    <WeatherInfo />
-    </Container>
-    
-    <Yelp />
+      <Container>
+        <h1>Winery Search</h1>
+        <DateInfo />
+        <WeatherInfo />
+      </Container>
+      <Yelp />
+      {/* <SearchForm />
+      <RestaurantList /> */}
 
-    <Footer />
-  </div>
-);
-
+      <Footer />
+    </div>
+  );
 }
 
 export default Search;
