@@ -11,13 +11,15 @@
 
 .Yelp {
   display: grid;
+  flex-direction: column;
   grid-template-areas:
-    "header header header header"
-    "searchForm searchForm searchForm searchForm"
-    "gallery gallery gallery gallery"
+    "header header header header header header"
+    "searchForm searchForm searchForm searchForm searchForm searchForm"
+    "gallery gallery gallery"
     "footer footer footer footer";
   margin: 3rem;
 }
+
 @import url("https://fonts.googleapis.com/css?family=Special+Elite");
 
 @import "../styles/SearchForm.css";

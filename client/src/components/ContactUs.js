@@ -1,11 +1,6 @@
 import React from "react";
 import "../styles/ContactUs.css";
-import Row from "./Row";
-import Col from "./Col";
-import Img from "./Img";
 import Container from "./Container";
-
-import Wrapper from "./Wrapper";
 
 function ContactUs() {
   return (

@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import axios from "axios";
-
 import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
+import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/restaurantList.css";
 
 class RestaurantList extends Component {
   constructor(props) {
@@ -71,22 +73,42 @@ class RestaurantList extends Component {
   render() {
     return (
       <div>
-        <ul>
-          {this.state.results.map(result => {
-            console.log(this.state.results);
-            return (
-              <Card>
-                <Card.Title>{result.name}</Card.Title>
-                <Card.Subtitle>{result.phone}</Card.Subtitle>
+        {this.state.results.map(result => {
+          console.log(this.state.results);
+          return (
+            <CardGroup>
+              <Card
+                className="card-group"
+                // border="primary"
+                style={{
+                  width: "11.7rem",
+                  display: "inline-flex",
+                }}
+              >
+                <Card.Img
+                  id="RestuarantList"
+                  style={{ width: "11rem" }}
+                  variant="top"
+                  src="holder.js/200px200"
+                  src={result.image_url}
+                />
+                <Card.Body>
+                  <Card.Title>{result.name}</Card.Title>
+                  <Card.Text>{result.display_phone}</Card.Text>
 
-                <Card.Text>
-                  {result.location.display_address[0]}{" "}
-                  {result.location.display_address[1]}
-                </Card.Text>
+                  <Card.Text>
+                    {result.location.display_address[0]}
+                    <br />
+                    {result.location.display_address[1]}
+                  </Card.Text>
+                  <Button href={result.url} variant="primary">
+                    More info on Yelp
+                  </Button>
+                </Card.Body>
               </Card>
-            );
-          })}
-        </ul>
+            </CardGroup>
+          );
+        })}
       </div>
     );
   }
