@@ -1,4 +1,4 @@
-.searchForm {
+/* .searchForm {
   grid-area: searchForm;
   @include border;
   padding: 2rem 0;
@@ -54,7 +54,7 @@
     &:focus {
       outline: none;
     }
-  }
+  } */
 
   &__icon {
     font-size: 2rem;
