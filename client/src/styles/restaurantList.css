@@ -1,0 +1,11 @@
+.RestuarantList {
+  grid-area: gallery;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 2rem;
+  width: 25%;
+  max-height: 50rem;
+  position: relative;
+}

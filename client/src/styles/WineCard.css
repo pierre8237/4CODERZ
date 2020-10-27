@@ -1,13 +1,16 @@
-p {
+/* p {
   margin: 0px 0px 8px;
 }
 .th {
-  padding: 0 0 0 0;
+  padding: 0px 0px 0px 0px;
   max-width: 50%;
 }
 .card-body {
-  padding: 0 0 0 0;
+  padding: 0px 0px 0px 0px;
 }
 .card-title {
   margin: 0 0 12px 3px;
 }
+.card {
+  margin: 0px 0px 0px 0px;
+} */

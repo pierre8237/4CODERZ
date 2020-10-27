@@ -1,0 +1,13 @@
+#gallery {
+  width: 100%;
+  padding-left: 90px;
+  padding-right: 60px;
+}
+
+@media only screen and (max-width: 850px) {
+  #gallery {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}

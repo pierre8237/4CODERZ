@@ -1,28 +1,23 @@
 import React from "react";
-
-import Header from "../components/Header";
-import Wrapper from "../components/Wrapper";
-import Card from "../components/Card";
-import Col from "../components/Col";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Row from "../components/Row";
-import Container from "../components/Container";
-import Jumbotron from "../components/Jumbotron";
-
-
-import WineCard from "../components/WineCard";
-import { wineDb } from "../utils/API";
 import "../styles/WineCard.css";
+import Header from "../components/Header";
 
-import YelpApp from "../YelpApp";
+import Footer from "../components/Footer";
+import Container from "../components/Container";
+// import Col from "../components/Col";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
 
-function Spain () {
-    return (
-      <div>
+import SpainRed from "../components/WineCards/SpainCards/SpainRedWineCard";
+import SpainWhite from "../components/WineCards/SpainCards/SpainWhiteWineCard";
+import SpainRedb from "../components/WineCards/SpainCards/SpainRedWineCard2";
+import SpainWhiteb from "../components/WineCards/SpainCards/SpainWhiteWineCard2";
+
+function Spain() {
+  return (
+    <div>
       <Header />
       {/* <Jumbotron />   */}
-
       <Container>
         <Col size="lg-2 sm-12"></Col>
         <Col size="lg-10 sm-12">
@@ -44,23 +39,19 @@ function Spain () {
       </Container>
 
       <Container>
-        <WineCard />
+        <SpainRed />
       </Container>
 
       <Container>
-        <WineCard />
+        <SpainRedb />
       </Container>
 
       <Container>
-        <WineCard />
+        <SpainWhiteb />
       </Container>
 
       <Container>
-         <WineCard />
-      </Container>
-
-      <Container>
-      <YelpApp />
+        <SpainWhite />
       </Container>
 
       <Footer />

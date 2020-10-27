@@ -1,51 +1,19 @@
-import React, { useEffect, useState } from "react";
-
-import Header from "../components/Header";
-import Wrapper from "../components/Wrapper";
-import Col from "../components/Col";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Row from "../components/Row";
-import Container from "../components/Container";
-import Jumbotron from "../components/Jumbotron";
-
-
-import WineCard from "../components/WineCard";
-import { wineDb } from "../utils/API";
-
+import React from "react";
 import "../styles/WineCard.css";
+import Header from "../components/Header";
 
-import YelpApp from "../YelpApp";
+import Footer from "../components/Footer";
+import Container from "../components/Container";
 
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
 
-let db = wineDb.getPairings().then(res => console.log(res.data));
-
+import UsaRed from "../components/WineCards/USACards/UsaRedWineCard";
+import UsaRedb from "../components/WineCards/USACards/UsaRedWineCard2";
+import UsaWhite from "../components/WineCards/USACards/UsaWhiteWineCard";
+import UsaWhiteb from "../components/WineCards/USACards/UsaWhiteWineCard2";
 
 function Usa() {
-  const [wines, setWines] = useState([]);
-  const [formObject, setFormObject] = useState({
-    Brand_Name: "",
-    Cheese_Pairing: "",
-    Drinking_Temperature: "",
-    From: "",
-    Grape: "",
-    Price_Point: "",
-    Vintage: "",
-    Region: "",
-    Soil: "",
-    Vintage: "",
-
-    Price_Point: ""
-  });
-
-  function loadWine() {
-    wineDb.getPairings().then(res => {
-      db = res.data;
-    });
-  }
-
-  wineDb.getPairings();
-
   return (
     <div>
       <Header />
@@ -67,30 +35,24 @@ function Usa() {
             </a>{" "}
             from USA
           </p>
-          {/* {loadWine()} */}
         </Col>
       </Container>
 
       <Container>
-        <WineCard />
+        <UsaRed />
       </Container>
 
       <Container>
-        <WineCard />
+        <UsaRedb />
       </Container>
 
       <Container>
-        <WineCard />
+        <UsaWhite />
       </Container>
 
       <Container>
-        <WineCard />
+        <UsaWhiteb />
       </Container>
-    
-    <Container>
-    <YelpApp />
-     </Container>
-    
 
       <Footer />
     </div>

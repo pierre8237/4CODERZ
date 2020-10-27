@@ -19,7 +19,7 @@ import "../styles/Header.css";
 //       { name: "Contact" }
 //     ];
 //     return (
-//       <div className="Main"> 
+//       <div className="Main">
 //         <ul>
 //           {clickables.map((clickable, i) => {
 //             return (
@@ -51,10 +51,10 @@ function Header() {
         <a href="/spain">Spain</a>
         <a href="/usa">USA</a>
         <a href="/gallery">Gallery</a>
+        <a href="/search">Search</a>
         <a href="/contact">Contact</a>
-
       </nav>
     </header>
-  )
+  );
 }
 export default Header;
