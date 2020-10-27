@@ -1,4 +1,5 @@
 /* html {
+
   background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.2),
@@ -26,3 +27,4 @@
 @import "../styles/restaurantList.css";
 
 /* @import "../styles/Yelp.css"; */
+
