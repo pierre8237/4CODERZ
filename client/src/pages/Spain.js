@@ -13,7 +13,6 @@ import SpainWhite from "../components/WineCards/SpainCards/SpainWhiteWineCard";
 import SpainRedb from "../components/WineCards/SpainCards/SpainRedWineCard2";
 import SpainWhiteb from "../components/WineCards/SpainCards/SpainWhiteWineCard2";
 
-
 function Spain() {
   return (
     <div>
