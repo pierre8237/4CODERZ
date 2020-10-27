@@ -25,11 +25,11 @@ export default [
   },
   {
     id: 6,
-    image: require("./components/Images/wineImages/ramey2.jpg")
+    image: require("./components/Images/wineImages/ramey4.jpg")
   },
   {
     id: 7,
-    image: require("./components/Images/wineImages/sokol2.jpg")
+    image: require("./components/Images/wineImages/sokol3.jpg")
   },
   {
     id: 8,
@@ -41,7 +41,7 @@ export default [
   },
   {
     id: 10,
-    image: require("./components/Images/wineImages/farnese2.jpg")
+    image: require("./components/Images/wineImages/farnese3.jpg")
   },
   {
     id: 11,
@@ -53,7 +53,7 @@ export default [
   },
   {
     id: 13,
-    image: require("./components/Images/wineImages/isabella2.jpg")
+    image: require("./components/Images/wineImages/isabella3.jpg")
   },
   {
     id: 14,

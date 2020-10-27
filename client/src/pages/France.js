@@ -1,6 +1,7 @@
 import React from "react";
 
 import Header from "../components/Header";
+<<<<<<< HEAD
 import Jumbotron from "../components/Jumbotron";
 import Navbar from "../components/Navbar";
 import Container from "../components/Container";
@@ -14,11 +15,32 @@ import WineCard from "../components/WineCard";
 import { wineDb } from "../utils/API";
 import "../styles/WineCard.css";
 
+=======
+
+// import Wrapper from "../components/Wrapper";
+// import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Container from "../components/Container";
+// import Jumbotron from "../components/Jumbotron";
+import Col from "react-bootstrap/Col";
+// import Card from "react-bootstrap/Card";
+
+
+import FranceRed from "../components/WineCards/FranceCards/franceRedWineCard";
+import FranceRedb from "../components/WineCards/FranceCards/franceRedWineCard2";
+import FranceWhite from "../components/WineCards/FranceCards/franceWhiteWineCard";
+import FranceWhiteb from "../components/WineCards/FranceCards/franceWhiteWineCard2";
+
+>>>>>>> 9e1dadec0785985f0d3608efa839a917d218b30d
 // import YelpApp from "../Yelp/YelpApp";
 // import WineryList from "../components/WineryList";
 // import SearchForm from "../components/SearchForm";
 
 function France() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9e1dadec0785985f0d3608efa839a917d218b30d
   return (
     <div>
       <Header />
@@ -44,19 +66,19 @@ function France() {
       </Container>
 
       <Container>
-        <WineCard />
+        <FranceRed />
       </Container>
 
       <Container>
-        <WineCard />
+        <FranceRedb />
       </Container>
 
       <Container>
-        <WineCard />
+        <FranceWhite />
       </Container>
 
       <Container>
-        <WineCard />
+        <FranceWhiteb />
       </Container>
 
       {/* <Container>

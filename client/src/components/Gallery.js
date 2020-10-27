@@ -6,8 +6,6 @@ import Img from "./Img1";
 import Container from "./Container";
 import Wrapper from "./Wrapper";
 
-
-
 class Gallery extends Component {
   state = {
     GalleryImg
@@ -15,7 +13,6 @@ class Gallery extends Component {
 
   render() {
     return (
-      
       // <Wrapper>
       <Container>
       <div id="gallery" style={{display: "inline-block"}}>
@@ -32,7 +29,7 @@ class Gallery extends Component {
       </Container>
       // </Wrapper>
     );
-    }
   }
+}
 
-  export default Gallery;
+export default Gallery;

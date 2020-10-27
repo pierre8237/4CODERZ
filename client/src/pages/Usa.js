@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React from "react";
 import React, { useEffect, useState } from "react";
 
@@ -13,8 +14,13 @@ import Footer from "../components/Footer";
 
 import WineCard from "../components/WineCard";
 import { wineDb } from "../utils/API";
+=======
+import React from "react";
+>>>>>>> 9e1dadec0785985f0d3608efa839a917d218b30d
 import "../styles/WineCard.css";
+import Header from "../components/Header";
 
+<<<<<<< HEAD
 let db = wineDb.getPairings().then(res => console.log(res.data));
 
 function Usa() {
@@ -42,6 +48,20 @@ function Usa() {
 
   wineDb.getPairings();
 
+=======
+import Footer from "../components/Footer";
+import Container from "../components/Container";
+
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+
+import UsaRed from "../components/WineCards/USACards/UsaRedWineCard";
+import UsaRedb from "../components/WineCards/USACards/UsaRedWineCard2";
+import UsaWhite from "../components/WineCards/USACards/UsaWhiteWineCard";
+import UsaWhiteb from "../components/WineCards/USACards/UsaWhiteWineCard2";
+
+function Usa() {
+>>>>>>> 9e1dadec0785985f0d3608efa839a917d218b30d
   return (
     <div>
       <Header />
@@ -63,24 +83,23 @@ function Usa() {
             </a>{" "}
             from USA
           </p>
-          {/* {loadWine()} */}
         </Col>
       </Container>
 
       <Container>
-        <WineCard />
+        <UsaRed />
       </Container>
 
       <Container>
-        <WineCard />
+        <UsaRedb />
       </Container>
 
       <Container>
-        <WineCard />
+        <UsaWhite />
       </Container>
 
       <Container>
-        <WineCard />
+        <UsaWhiteb />
       </Container>
 
       <Footer />

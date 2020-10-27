@@ -6,7 +6,11 @@ import Row from "../components/Row";
 import Col from "../components/Col";
 import Img from "../components/Img";
 import Container from "../components/Container";
+<<<<<<< HEAD
 
+=======
+import Card from "../components/Card";
+>>>>>>> 9e1dadec0785985f0d3608efa839a917d218b30d
 import Wrapper from "../components/Wrapper";
 
 const mapData = {
@@ -15,7 +19,11 @@ const mapData = {
   IT: 80,
   ES: 70,
   AU: 60,
+<<<<<<< HEAD
   CL: 50,
+=======
+  CL: 50
+>>>>>>> 9e1dadec0785985f0d3608efa839a917d218b30d
 };
 
 // const styles = {

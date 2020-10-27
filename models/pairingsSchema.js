@@ -37,7 +37,11 @@ const pairingSchema = new Schema({
   Cheese_Pairing: {
     type: String,
     required: true
-  }
+  } //,
+  // Color: {
+  //   type: String,
+  //   required: true
+  // }
 });
 
 const Pairing = mongoose.model("Pairing", pairingSchema);

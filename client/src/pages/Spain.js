@@ -1,6 +1,7 @@
 import React from "react";
-
+import "../styles/WineCard.css";
 import Header from "../components/Header";
+<<<<<<< HEAD
 import Jumbotron from "../components/Jumbotron";
 import Navbar from "../components/Navbar";
 import Container from "../components/Container";
@@ -8,12 +9,28 @@ import Wrapper from "../components/Wrapper";
 
 import Col from "../components/Col";
 import Row from "../components/Row";
-import Footer from "../components/Footer";
+=======
 
+>>>>>>> 9e1dadec0785985f0d3608efa839a917d218b30d
+import Footer from "../components/Footer";
+import Container from "../components/Container";
+
+<<<<<<< HEAD
 import WineCard from "../components/WineCard";
 import { wineDb } from "../utils/API";
 import "../styles/WineCard.css";
 
+=======
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+
+import SpainRed from "../components/WineCards/SpainCards/SpainRedWineCard";
+import SpainWhite from "../components/WineCards/SpainCards/SpainWhiteWineCard";
+import SpainRedb from "../components/WineCards/SpainCards/SpainRedWineCard2";
+import SpainWhiteb from "../components/WineCards/SpainCards/SpainWhiteWineCard2";
+
+
+>>>>>>> 9e1dadec0785985f0d3608efa839a917d218b30d
 function Spain() {
   return (
     <div>
@@ -40,19 +57,19 @@ function Spain() {
       </Container>
 
       <Container>
-        <WineCard />
+        <SpainRed />
       </Container>
 
       <Container>
-        <WineCard />
+        <SpainRedb />
       </Container>
 
       <Container>
-        <WineCard />
+        <SpainWhiteb />
       </Container>
 
       <Container>
-        <WineCard />
+        <SpainWhite />
       </Container>
 
       <Footer />
