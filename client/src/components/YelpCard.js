@@ -2,6 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 function YelpCard() {
   <Card style={{ width: "18rem" }}>
     <Card.Body>
@@ -28,4 +29,5 @@ function YelpCard() {
     </Card.Body>
   </Card>;
 }
+
 export default YelpCard;

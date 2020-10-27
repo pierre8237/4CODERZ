@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/restaurantList.css";
 
+
 class RestaurantList extends Component {
   constructor(props) {
     super(props);
@@ -137,6 +138,8 @@ export default RestaurantList;
 
                     <p className = "RestaurantInfo__reviewCount"> Based on {result.review_count} Reviews</p> */
 
+
+
 // <a href= {result.url}
 //     className = "RestaurantInfo__website">
 //         More infomration on Yelp
@@ -160,6 +163,7 @@ export default RestaurantList;
 //             {this.state.results}
 
 /* {this.state.results.length ? this.renderRestaurantInfo() : this.renderEmptyState()} */
+
 
 /*                 
                  {!!this.state.errorState &&
