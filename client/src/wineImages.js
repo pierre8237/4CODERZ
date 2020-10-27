@@ -1,7 +1,7 @@
 export default [
   {
     id: 0,
-    image: require("./components/Images/wineImages/cakebread.jpeg")
+    image: require("./components/Images/wineImages/cakebread2.jpg")
   },
   {
     id: 1,
@@ -49,7 +49,7 @@ export default [
   },
   {
     id: 12,
-    image: require("./components/Images/wineImages/Murrieta2.jpg")
+    image: require("./components/Images/wineImages/murrieta3.jpg")
   },
   {
     id: 13,

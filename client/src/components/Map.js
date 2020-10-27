@@ -47,7 +47,9 @@ function Map() {
         zoomOnScroll={false}
         containerStyle={{
           width: "100%",
-          height: "800px",
+
+          height: "800px"
+
         }}
         onRegionClick={handleClick} //gets the country code
         containerClassName="map"
@@ -57,16 +59,18 @@ function Map() {
             "fill-opacity": 0.9,
             stroke: "none",
             "stroke-width": 0,
-            "stroke-opacity": 0,
+
+            "stroke-opacity": 0
           },
           hover: {
             "fill-opacity": 0.8,
-            cursor: "pointer",
+            cursor: "pointer"
           },
           selected: {
-            fill: "#2938bc", //color for the clicked country
+            fill: "#2938bc" //color for the clicked country
           },
-          selectedHover: {},
+          selectedHover: {}
+
         }}
         regionsSelectable={true}
         series={{
@@ -74,9 +78,11 @@ function Map() {
             {
               values: mapData, //this is your data
               scale: ["#146804", "#ff0000"], //your color game's here
-              normalizeFunction: "polynomial",
-            },
-          ],
+
+              normalizeFunction: "polynomial"
+            }
+          ]
+
         }}
       />
     </Container>
