@@ -18,3 +18,11 @@ html {
     "footer footer footer footer";
   margin: 3rem;
 }
+<<<<<<< Updated upstream:client/src/YelpApp.css
+=======
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
+
+@import "../styles/restaurantList.css";
+
+/* @import "../styles/Yelp.css"; */
+>>>>>>> Stashed changes:client/src/styles/Yelp.css
