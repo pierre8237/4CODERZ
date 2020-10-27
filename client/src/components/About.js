@@ -1,8 +1,10 @@
 import React from "react";
 import "../styles/About.css";
+
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+
 import "../styles/About.css";
 
 function About() {
@@ -10,6 +12,7 @@ function About() {
     <Container>
       <div>
         <Container>
+
           <Row style={{ textAlign: "center" }} className="about" id="about1">
             <Col md={12}>Mission Statement.</Col>
           </Row>
@@ -22,6 +25,7 @@ function About() {
             friends & family in your life. We’re dedicated to making it easy to
             learn about the topic of cheese and wine pairings and acquired every
             product we feature in order to recreate at home.
+
           </Row>
         </Container>
       </div>

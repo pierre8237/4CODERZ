@@ -7,11 +7,12 @@ import Container from "./Container";
 
 
 
+
+
 function Team() {
   return (
     <div class="container">
       <div class="heading-title text-center">
-
 
                             <p class="p-top-30 half-txt"></p>
                                 <h3 class="text-uppercase">Our Team Members </h3>
@@ -95,6 +96,7 @@ function Team() {
                         </div>
     
                     </div>
+
 
   );
 }

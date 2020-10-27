@@ -5,7 +5,7 @@ import Row from "../components/Row";
 import Col from "../components/Col";
 import Img from "../components/Img";
 import Container from "../components/Container";
-import Card from "../components/Card";
+
 import Wrapper from "../components/Wrapper";
 
 function Jumbotron(props) {
@@ -17,7 +17,6 @@ function Jumbotron(props) {
             Dionysus <i className="fas fa-wine-bottle"></i>
           </h1>
         </div>
-
       </div>
     </Container>
   );
