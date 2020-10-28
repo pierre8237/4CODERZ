@@ -256,12 +256,12 @@ self.__precacheManifest = [
     "url": "/static/media/owfont-regular.e00c269c.eot"
   },
   {
-    "revision": "52789eacb826dc60516b8eb093b1b813",
-    "url": "/static/media/owfont-regular.52789eac.svg"
-  },
-  {
     "revision": "3d73387c2a1e21f207a8357724f536ba",
     "url": "/static/media/owfont-regular.3d73387c.ttf"
+  },
+  {
+    "revision": "52789eacb826dc60516b8eb093b1b813",
+    "url": "/static/media/owfont-regular.52789eac.svg"
   },
   {
     "revision": "502bfa0b8fa73b55530870f8f41d0c2c",
