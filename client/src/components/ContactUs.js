@@ -2,6 +2,10 @@ import React from "react";
 import "../styles/ContactUs.css";
 import Container from "./Container";
 
+
+import Wrapper from "./Wrapper";
+
+
 function ContactUs() {
   return (
     <Container>

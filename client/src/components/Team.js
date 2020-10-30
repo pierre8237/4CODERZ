@@ -5,6 +5,8 @@ import Aimee from "./Images/aimee (1).png";
 import Pierre from "./Images/pierre (1).png";
 import Container from "./Container";
 
+
+
 function Team() {
   return (
     <div class="container">

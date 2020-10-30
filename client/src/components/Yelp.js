@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+
+
 import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
 import RestaurantList from "../components/RestaurantList";
@@ -23,6 +25,8 @@ class Yelp extends Component {
     return (
       <div className="Yelp">
         <SearchForm onFormSubmit={this.onFormSubmit} />
+
+
         <RestaurantList searchLocationQuery={this.state.searchLocationQuery} />
       </div>
     );
