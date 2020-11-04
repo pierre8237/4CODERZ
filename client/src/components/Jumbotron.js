@@ -2,10 +2,6 @@ import React from "react";
 import "../styles/Jumbotron.css";
 import Container from "../components/Container";
 
-
-import Wrapper from "../components/Wrapper";
-
-
 function Jumbotron(props) {
   return (
     <Container>
