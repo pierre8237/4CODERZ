@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
-
 import Mestral from "../../Images/wineImages/mestral2.jpg";
-import Table from "react-bootstrap/Table";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import { List, ListItem } from "../../List";
 import { wineDb } from "../../../utils/API";
 
@@ -29,8 +26,12 @@ function SpainWhiteb(props) {
   return (
     <Card mb={1} style={{ width: "auto", maxWidth: "100%", display: "fluid" }}>
       <Row>
-        <Col md={4}>
-          <Image src={Mestral} alt="..." fluid />
+        <Col md={4} className="m-auto">
+          <Image
+            src={Mestral}
+            alt="..."
+            className="d-block m-auto img-fluid w-50"
+          />
         </Col>
         <Col md={8}>
           <Card.Body>
