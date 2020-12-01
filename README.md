@@ -1,7 +1,7 @@
 
 
 Description
-This project was developed by Aimee Millard, Mathew Poovathany, and Pierre Calmels as the capstone project for our coding bootcamp. We used an Agile methodolgy to bring your concept to deployment in three weeks. Dionysis is a winepairing app that gives users information about a selection of wines from around the world, including suggestions for cheeses to pair them with.
+This project was developed by Aimee Millard, Mathew Poovathany, and Pierre Calmels as the capstone project for our coding bootcamp. We used an Agile methodolgy to bring our project from concept to deployment in three weeks. Dionysis is a wine-pairing app that gives users information about a selection of wines from around the world, including suggestions for cheeses to pair them with. Makes use of a create-react-app scaffolding for our front-end with a node server, express middleware for routing and parsing, MongoDB to store our suggested wines and two third-party api's that allow users to search for wineries in their area as well as providing them with the current weather report. 
 
 Table of Contents
 Installation
